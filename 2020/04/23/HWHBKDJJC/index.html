@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>Hello World｜Hexo博客搭建教程 | Hexo</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Hexo"><meta name="msapplication-starturl" content="http://example.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hexo"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="Hello World｜Hexo博客搭建教程 | Hexo"><meta property="og:site_name" content="Hexo"><meta property="og:type" content="article"><meta property="og:url" content="http://example.com/2020/04/23/HWHBKDJJC/"><meta property="og:locale" content="en"><meta name="description" content="Welcome to Hexo! This is your first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or ask me on GitHub. - John Doe - Hexo"><meta name="keywords" content="Hexo"><meta property="og:image" content="/uploads/654.png"><meta property="article:published_time" content="2020-04-23T07:21:24.000Z"><meta property="article:modified_time" content="2020-08-25T03:00:05.742Z"><meta property="og:updated_time" content="2020-08-25T03:00:05.742Z"><meta property="article:author" content="John Doe"><meta property="article:tag" content="Hexo"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="/uploads/654.png">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://example.com/2020/04/23/HWHBKDJJC/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://example.com/2020/04/23/HWHBKDJJC/",
+    "@type": "BlogPosting",
+    "logo": "http://example.com/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://example.com/2020/04/23/HWHBKDJJC/"
+    },
+    "headline": "Hello World｜Hexo博客搭建教程 | Hexo",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://example.com/uploads/654.png"
+    },
+    
+    "datePublished": "2020-04-23T07:21:24.000Z",
+    "dateModified": "2020-08-25T03:00:05.742Z",
+    "author": {
+        "@type": "Person",
+        "name": "John Doe",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://example.com/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Hexo",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://example.com/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://example.com/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "Hexo",
+    "description": "Welcome to Hexo! This is your first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or ask me on GitHub. - John Doe - Hexo"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">Hexo</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=Hexo&url=http://example.com&pic=/uploads/654.png&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=Hexo&url=http://example.com&via=John Doe" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://example.com" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com&title=Hello World｜Hexo博客搭建教程" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Hexo&title=Hello World｜Hexo博客搭建教程&summary=&pics=/uploads/654.png&url=http://example.com" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://example.com&text=Hello World｜Hexo博客搭建教程" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABi0lEQVR42u3ayw6CMBCFYd7/pXVrTHvOGYEyNT8bjMH6LZrOjePV4DpAgACxBeIQ1+czs/vouXhdEG0Rw00z+H6GGT2frAuiN+J747j798ZUm3m0Loi9EdXPIP4foQ6tJOiB2BPxS7Aa/fktURTEcoRKSM/cL8u2QSxF2KJVJLPLqnIQSxFJMHIglQzJ9UC0RcjEIyx+FKAcwEA8inB/kDTSVJNEHXAgeiPSQDVb3G3s4W9AtEW4zZgkwUmRFGVWIFog3EZSDY80gMkmCYiWiFnwSovbNAEunZggWiBUYuMGsy4QxlEUxKOItIB1m9FuwiuqchBLEWkRlMCT5iyIPRCVoWxlABd370C0QrhCNyl47TA2CWAg2iHcSztJ8usOMBC9EZVB3CyZkcns1cNZELcj0heF05c5XGMlGsSBeBzhGunpEE4VTVEAA9EKUS1wXLD7OYqC2ALhDjYV0GSzDcTWiEozJGmQgOiPqAxPkoL40igKYjkiKWTdcEXhTmfbIJYinrxAgADRGvEGBfHaSnQ6/XEAAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+            <div class="card-image lazyload" data-bg="url('/uploads/654.png')"></div>
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">Hello World｜Hexo博客搭建教程</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="John Doe's Avatar">
+        <span>2020-04-23</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/Information-Technology/">Information Technology</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=Hello World｜Hexo博客搭建教程&url=http://example.com/2020/04/23/HWHBKDJJC/&pic=/uploads/654.png&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=Hello World｜Hexo博客搭建教程&url=http://example.com/2020/04/23/HWHBKDJJC/&via=John Doe" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2020/04/23/HWHBKDJJC/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://example.com/2020/04/23/HWHBKDJJC/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com/2020/04/23/HWHBKDJJC/&title=Hexo" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=Hexo&title=Hexo&summary=&pics=/uploads/654.png&url=http://example.com/2020/04/23/HWHBKDJJC/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://example.com/2020/04/23/HWHBKDJJC/&text=Hexo" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABi0lEQVR42u3ayw6CMBCFYd7/pXVrTHvOGYEyNT8bjMH6LZrOjePV4DpAgACxBeIQ1+czs/vouXhdEG0Rw00z+H6GGT2frAuiN+J747j798ZUm3m0Loi9EdXPIP4foQ6tJOiB2BPxS7Aa/fktURTEcoRKSM/cL8u2QSxF2KJVJLPLqnIQSxFJMHIglQzJ9UC0RcjEIyx+FKAcwEA8inB/kDTSVJNEHXAgeiPSQDVb3G3s4W9AtEW4zZgkwUmRFGVWIFog3EZSDY80gMkmCYiWiFnwSovbNAEunZggWiBUYuMGsy4QxlEUxKOItIB1m9FuwiuqchBLEWkRlMCT5iyIPRCVoWxlABd370C0QrhCNyl47TA2CWAg2iHcSztJ8usOMBC9EZVB3CyZkcns1cNZELcj0heF05c5XGMlGsSBeBzhGunpEE4VTVEAA9EKUS1wXLD7OYqC2ALhDjYV0GSzDcTWiEozJGmQgOiPqAxPkoL40igKYjkiKWTdcEXhTmfbIJYinrxAgADRGvEGBfHaSnQ6/XEAAAAASUVORK5CYII=" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#为什么我要搭建博客"><span class="post-toc-number">1.</span> <span class="post-toc-text">为什么我要搭建博客</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#我的博客原理"><span class="post-toc-number">2.</span> <span class="post-toc-text">我的博客原理</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#教程选择建议"><span class="post-toc-number">3.</span> <span class="post-toc-text">教程选择建议</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Hexo博客搭建详细教程-Windows"><span class="post-toc-number">4.</span> <span class="post-toc-text">Hexo博客搭建详细教程|Windows</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装Node-js与Git"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">安装Node.js与Git</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装Hexo"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">安装Hexo</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#初始化-建立博客文件夹"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">初始化|建立博客文件夹</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#启动服务预览-预览你的博客"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">启动服务预览|预览你的博客</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#使用Github建立静态网页"><span class="post-toc-number">4.5.</span> <span class="post-toc-text">使用Github建立静态网页</span></a></li></ol></li></ol></div>
+                        
+                    
+                    <article id="post-content">
+                        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>. <a id="more"></a></p>
+<h2 id="为什么我要搭建博客"><a href="#为什么我要搭建博客" class="headerlink" title="为什么我要搭建博客"></a>为什么我要搭建博客</h2><p><font face="微软雅黑" color=dimgray>互联网时代带来的信息碎片化使信息的价值呈两极化发展：简短精炼的语句需要被投入的阅读时间及用来走马观花消耗的精力与其核心优势成正比；千篇万字的论文式文章愈发被大众抛弃，使其传播范围不如前者之广泛，受众群体易单一化。而作为注定与互联网绑定一生的网民但又同时无时无刻不在接收信息的我需要辨别好坏信息的能力，信息以毫秒为单位在我面前不断刷新，还未来得及消化上一条，下一条便接踵而至，信息的累计与重复、散落与零碎、节奏不一与被传播范围所局限在当下互联网几乎普及的今天使我感到十分困惑与窒息。当我选择用最简单的方式来记录这些有意义的、启发我的信息时，我发现现有的最简易最原始的存储信息的方式也是最无用的。在被国内某社交网站上移除了无数个账号后我彻底流浪在互联星河中，像一只脖子上系着铃铛但却浑身沾满泥巴的流浪猫无家可归。我的博客的建立倒不如说是被逼到无路可走，但也的确是在互联网找到靠谱又安全的托管星球的最原始最传统的方法。</font></p>
+<h2 id="我的博客原理"><a href="#我的博客原理" class="headerlink" title="我的博客原理"></a>我的博客原理</h2><p><font face="微软雅黑" color=dimgray>毫无编程经验甚至在决定搭建博客之前都不知道Github是什么的小白如我在这方面有着不同于专业程序员的整套说法。比起照搬Hexo官网的简介与说明或是教科书般死板的定义，我更愿意贴合实际以及用那些不抽象的例子给正在Google搜索栏里输入【Hexo博客搭建教程】的新手们。搭建Hexo到使用的过程(搭建、更换主题、发布文章、学习Markdown语法，维修升级等)就好比从零房屋建造即使“从零”并不严谨，毕竟你已经拥有了联网的计算机。</font></p>
+<table>
+<thead>
+<tr>
+<th>房屋建造</th>
+<th>搭建博客</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>地基</td>
+<td>Github Page静态网页</td>
+</tr>
+<tr>
+<td>钢筋</td>
+<td>Hexo</td>
+</tr>
+<tr>
+<td>混凝土</td>
+<td>发布的文章</td>
+</tr>
+<tr>
+<td>装修</td>
+<td>博客主题</td>
+</tr>
+</tbody></table>
+<h2 id="教程选择建议"><a href="#教程选择建议" class="headerlink" title="教程选择建议"></a>教程选择建议</h2><p><font face="微软雅黑" color=dimgray>首先必须说明用Hexo搭建博客需要一定的编程经验，所以对于纯小白来说并不会是很轻松的体验。在我只靠自己搭建博客的初期曾浏览了网路上许多鱼龙混杂的文字教程，这些文字教程的大致内容虽然相仿但细分到其中的步骤顺序就显得出入很大，更无奈的是很多术业有专攻的程序员作者的表达能力实在堪忧，大部分文字教程只给我带来了干扰与困惑。相比之下我更推荐与我面临相同困境的新手直接跟着Youtube上的视频教程搭建博客，视频教程的优势在于完整地还原了搭建博客的每一个步骤，不需要根据文字凭空想象或小心翼翼地实操生怕出错。凭借视频教程的帮助我在很短的时间内就顺利搭建完成了自己的博客雏形，那时我才意识到自己在文字教程上浪费了太多的时间，同样也再次遗憾自己没有好的导师带领入门以及传授经验避免将时间浪费在踩雷掉坑之上。</p>
+<p><strong>在此推荐曾经帮助过我的Youtube教学视频</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLXbU-2B80FvDjD_RiuNwsSQ4eF8pkwAIa" target="_blank" rel="noopener">快速使用Hexo搭建个人博客</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLD5dyQmlN6xPqBV0cxO7zAe1C8OmDPqfX" target="_blank" rel="noopener">Hexo静态网页制作教程</a></li>
+</ul>
+<h2 id="Hexo博客搭建详细教程-Windows"><a href="#Hexo博客搭建详细教程-Windows" class="headerlink" title="Hexo博客搭建详细教程|Windows"></a>Hexo博客搭建详细教程|Windows</h2><h3 id="安装Node-js与Git"><a href="#安装Node-js与Git" class="headerlink" title="安装Node.js与Git"></a>安装Node.js与Git</h3><ul>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>本需不低于10.13 建议使用Node.js12及以上版本 <strong>推荐LTS版本</strong></li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>安装时一路<strong>Next</strong>即可<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3></li>
+<li>搜索电脑应用<strong>命令提示符</strong></li>
+<li>在<strong>命令提示符</strong>中输入如下代码 即使用npm安装Hexo<br><code>npm install -g hexo-cli</code></li>
+</ul>
+<p><strong>如果你卡在这步屏幕上没有出现+ <a href="mailto:&#104;&#x65;&#x78;&#x6f;&#x2d;&#99;&#x6c;&#105;&#x40;&#x78;&#46;&#x78;&#46;&#48;">&#104;&#x65;&#x78;&#x6f;&#x2d;&#99;&#x6c;&#105;&#x40;&#x78;&#46;&#x78;&#46;&#48;</a>则代表你没有安装成功，没有安装成功是由于中国大陆防火墙将中国大陆与世界分隔开来所以Node.js时不时失效，尽量确保你的电脑保持可以翻墙的状态。如果电脑已经处于可以使用谷歌看油管的状态却依旧卡在这步，请按照以下教程使用Node.js镜像版。</strong></p>
+<ul>
+<li>搜索电脑应用<strong>命令提示符</strong></li>
+<li>在<strong>命令提示符</strong>中输入如下代码 安装Node.js镜像版<br><code>npm config set registry https://registry.npm.taobao.org</code></li>
+<li>在<strong>命令提示符</strong>中输入如下代码 使用npm安装Hexo<br><code>npm install -g hexo-cli</code><br><font face="微软雅黑" color=dimgray>出现【+ <a href="mailto:&#x68;&#101;&#x78;&#x6f;&#x2d;&#x63;&#x6c;&#105;&#x40;&#x78;&#46;&#120;&#x2e;&#x30;">&#x68;&#101;&#x78;&#x6f;&#x2d;&#x63;&#x6c;&#105;&#x40;&#x78;&#46;&#120;&#x2e;&#x30;</a>】则代表Hexo初步安装成功！</font></li>
+</ul>
+<h3 id="初始化-建立博客文件夹"><a href="#初始化-建立博客文件夹" class="headerlink" title="初始化|建立博客文件夹"></a>初始化|建立博客文件夹</h3><ul>
+<li>在命令提示符中输入hexo init <strong><em>nameofyourblog</em></strong> 以我自己的博客名字“Toodles”为例 我应输入：<br><code>hexo init Toodles</code></li>
+</ul>
+<p><strong>如果你卡在这步屏幕上没有出现“add xx packages in 6s”而是“npm error” 则说明博客文件夹建立成功但没有将Hexo在Github上的全部文件下载到博客文件夹中，这是很常见的问题。我们只需在命令提示符中继续输入如下代码：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd Toodles</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p><font face="微软雅黑" color=dimgray>出现【add xx packages in 6s】则代表博客文件夹建立/初始化成功！</font></p>
+<h3 id="启动服务预览-预览你的博客"><a href="#启动服务预览-预览你的博客" class="headerlink" title="启动服务预览|预览你的博客"></a>启动服务预览|预览你的博客</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p><font face="微软雅黑" color=dimgray>出现【INFO Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a> . Press Ctrl+C to stop.】并在浏览器中打开其中的链接<a href="http://localhost:4000，且此网站为Hexo博客的雏形即算预览成功！">http://localhost:4000，且此网站为Hexo博客的雏形即算预览成功！</a></font></p>
+<h3 id="使用Github建立静态网页"><a href="#使用Github建立静态网页" class="headerlink" title="使用Github建立静态网页"></a>使用Github建立静态网页</h3>
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-08-25");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2020-04-23T07:21:24.000Z" itemprop="datePublished">2020-04-23</time>
+
+    , Updated at&nbsp;<time datetime="2020-08-25T03:00:05.742Z" itemprop="dateModified">2020-08-25</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/Information-Technology/'>Information Technology</a>
+
+</span>
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/Hexo/" rel="tag">#&nbsp;Hexo</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2020/05/09/%E6%97%A5%E6%9C%ACJK%E5%88%B6%E6%9C%8D%E8%83%8C%E5%90%8E%E7%9A%84%E5%8E%86%E5%8F%B2%E4%B8%8E%E7%A4%BE%E4%BC%9A%E8%A7%84%E8%AE%AD/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">日本JK制服背后的历史与社会规训</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://example.com">Hexo</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>
