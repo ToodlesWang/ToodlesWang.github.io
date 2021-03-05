@@ -1,406 +1,236 @@
+
+
 <!DOCTYPE html>
-
-<html lang="tc">
-    <head>
-    <meta charset="utf-8">
-    <!--
-        hexo-theme-suka © SukkaW
-        GitHub: https://github.com/SukkaW/hexo-theme-suka
-    -->
-
-    <!-- ### Resource Hint ### -->
-
-    <!-- ## DNS Prefetch ## -->
-    <meta http-equiv="x-dns-prefetch-control" content="on">
-
-<!-- busuanzi -->
-
-    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
-
-
-<!-- comment -->
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
 
 
 
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  
+    <meta name="description" content="一份包含15条建议的女权主义宣言。">
+  
+  <meta name="author" content="星晞子">
+  <meta name="keywords" content="">
+  
+  <title>《亲爱的安吉维拉》 - 星晞子</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
 
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
 
-
-<!-- analytics -->
-
-
-
-
-
-
-
-    <!-- ## Preload ## -->
+  
     
-    <!-- Busuanzi -->
     
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
-
-
-
-
-
-
-
-    <!-- ### Meta & Title & Info ### -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
-    <meta name="renderer" content="webkit">
-
-    <!-- Title -->
-    <title>《亲爱的安吉维拉》 | 星晞子</title>
-
-    <!-- Favicons -->
-    <link rel="icon" type="image&#x2F;ico" href="/uploads/ico.ico"><link rel="apple-touch-icon" sizes="180x180" href="/uploads/favicon144%C3%97144.png"><link rel="icon" typt="image&#x2F;png" sizes="192x192" href="/uploads/favicon192%C3%97192.png"><link rel="icon" typt="image&#x2F;png" sizes="32x32" href="/uploads/favicon32%C3%9732.png"><link rel="icon" typt="image&#x2F;png" sizes="16x16" href="/uploads/favicon16%C3%9716.png"><link rel="mask-icon" href="/uploads/sgv.sgv" color="White"><meta name="theme-color" content="White">
-
-    <!-- ### Import File ### -->
-    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
-    body {
-        background-color: White;
-    }
-
-    a, a:visited {
-        color: DimGrey;
-    }
-
-    a:active, a:focus, a:hover {
-        color: DimGrey;
-        opacity: .75;
-    }
-
-    #post-content a,
-    #post-content a:hover,
-    #post-content a:focus,
-    #post-content a:visited {
-        color: DimGrey;
-        opacity: 1;
-    }
-
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
     
+  
 
-    .post-entry .card-body a {
-        color: Sienna;
-    }
-
-    .avatar {
-        background: Sienna;
-    }
-
-    .navbar-link,
-    .navbar-link:visited,
-    .timeline .timeline-item .timeline-icon.icon-lg {
-        color: Sienna;
-    }
-
-    .navbar-link:hover {
-        color: Sienna;
-        opacity: .8;
-    }
-
-    #search-input .btn,
-    #disqus_click_btn,
-    #disqus-switch-to-direct,
-    #disqus-loadmore-button {
-        background: Sienna;
-        border-color: Sienna;
-        color: #fff;
-    }
-
-    #post-toc a.post-toc-link,
-    #post-toc a.post-toc-link:visited,
-    .share-menu.menu .menu-item>a {
-        color: Sienna;
-    }
-
-    .share-menu.menu .menu-item>a:hover,
-    .share-menu.menu .menu-item>a:focus,
-    .share-menu.menu .menu-item>a:visited {
-        color: #50596c;
-        background: White;
-        opacity: .85;
-    }
-</style><link rel="stylesheet" href="/css/style.min.css">
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
 
 
 
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
 
 
-    <!-- Prettify Theme -->
-    
-    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
 
 
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"www.noshegood.com","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
 
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
 
-<script>
-/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
-!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
-</script>
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
 
-    <!-- ### Site Verification ### -->
-    
-
-
-    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="星晞子"><meta name="msapplication-starturl" content="www.noshegood.com"><meta name="msapplication-navbutton-color" content="White"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="星晞子"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="《亲爱的安吉维拉》 | 星晞子"><meta property="og:site_name" content="星晞子"><meta property="og:type" content="article"><meta property="og:url" content="www.noshegood.com/2021/01/13/%E3%80%8A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%AE%89%E5%90%89%E7%BB%B4%E6%8B%89%E3%80%8B/"><meta property="og:locale" content="tc"><meta name="description" content="一份包含15条建议的女权主义宣言。 - 星晞子 - 星晞子"><meta name="keywords" content="Book Report"><meta property="og:image" content="/uploads/9966.png"><meta property="article:published_time" content="2021-01-13T09:20:33.000Z"><meta property="article:modified_time" content="2021-01-13T13:11:37.410Z"><meta property="og:updated_time" content="2021-01-13T13:11:37.410Z"><meta property="article:author" content="星晞子"><meta property="article:tag" content="Book Report"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="/uploads/9966.png">
-
-    
-
-    <!-- ### Canonical link ### -->
-    <link rel="canonical" href="www.noshegood.com/2021/01/13/%E3%80%8A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%AE%89%E5%90%89%E7%BB%B4%E6%8B%89%E3%80%8B/">
-
-    <meta name="generator" content="Hexo 4.2.1">
-
-    <!-- ### Analytics ### -->
-    
-
-
-
-
-
-
-
-    <!-- ### Structured Data ### -->
-    
-
-
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "url": "www.noshegood.com/2021/01/13/%E3%80%8A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%AE%89%E5%90%89%E7%BB%B4%E6%8B%89%E3%80%8B/",
-    "@type": "BlogPosting",
-    "logo": "www.noshegood.com/uploads/favicon192%C3%97192.png",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "www.noshegood.com/2021/01/13/%E3%80%8A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%AE%89%E5%90%89%E7%BB%B4%E6%8B%89%E3%80%8B/"
-    },
-    "headline": "《亲爱的安吉维拉》 | 星晞子",
-    
-    "image": {
-        "@type": "ImageObject",
-        "url": "www.noshegood.com/uploads/9966.png"
-    },
-    
-    "datePublished": "2021-01-13T09:20:33.000Z",
-    "dateModified": "2021-01-13T13:11:37.410Z",
-    "author": {
-        "@type": "Person",
-        "name": "星晞子",
-        "image": {
-            "@type": "ImageObject",
-            "url": "www.noshegood.com/uploads/666.png"
-        },
-        "description": "用来收集碎片和储存书摘与笔记的博客"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "星晞子",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "www.noshegood.com/uploads/favicon192%C3%97192.png"
-        }
-    },
-    
-    "potentialAction": {
-        "@type": "SearchAction",
-        "target": "www.noshegood.com/search?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-    },
-    
-    "keywords": "Book Report",
-    "description": "一份包含15条建议的女权主义宣言。 - 星晞子 - 星晞子"
-}
-</script>
-
-
-
-    <!-- ### Custom Head ### -->
-    
-</head>
-
-    <body>
-            
-
-            <!-- ### Main content ### -->
-            <!-- ## Header ##-->
-<header>
-    <h1 class="header-title text-center"><a href="/">星晞子</a></h1>
-
-    <p class="text-center header-slogan">
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-            
-                用来收集碎片和储存书摘与笔记的博客
-            
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
         
-    </p>
-
-    <nav class="navbar-section text-center">
-    
-        <a href="/" class="navbar-link">Home</a>
-    
-    
-        <a href="/archives/" class="navbar-link">Archives</a>
-    
-    
-        <a href="/search" class="navbar-link">Search</a>
-    
-    
-    
-        <div class="dropdown dropdown-right">
-    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
-    <ul class="menu share-menu">
-
-        <!-- Share Weibo -->
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
         
-
-        <!-- Share Twitter -->
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
         
-        <li class="menu-item">
-            <a href="https://twitter.com/intent/tweet?text=星晞子&url=www.noshegood.com&via=星晞子" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
-        </li>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
         
-
-        <!-- Share Facebook -->
-        
-        <li class="menu-item">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=www.noshegood.com" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
-        </li>
-        
-
-        <!-- Share Google+ -->
-        
-
-        <!-- Share LinkedIn -->
-        
-
-        <!-- Share QQ -->
-        
-
-        <!-- Share Telegram -->
-        
-        <li class="menu-item">
-            <a href="https://t.me/share/url?url=www.noshegood.com&text=《亲爱的安吉维拉》" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
-        </li>
-        
-
-        <!-- QRCode -->
-        
-        <li class="menu-item">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAAAAADlzdG3AAADKElEQVR42u3a207DMBBF0f7/T8MTUoXiOXscT0vRzguINqkXkuu5Pb7+wfUQIUKECBHjiEdx/by+fMiv157ve3796pm/31vdc7UuESImEWmBK9Dq4at70md13itCxDSCbOjVxt3dyNVnknWJEPEOxGoxaUNf/U4POBEiPgFRLQ4HbPASIeIvIFJQRjDpQLt6P024bkWxIkQ0EXSDvfrn8WqHCBEAEYu2IGmpNmu1easE6WhVXISIZn/iTrJ/JxBcFR/SvSJETCPIAVcdhjQRqp5dFQqWxTwRIgYQqYF4ooFS4avidVXMFiFiEkEWRDYsSbBSw54cuCJETCI6TcIqCUrFsU5RrSquiRDxKgRNjLrJPw0ySfE5bmwRIg4gOsUsEvilZIc2WEghToSICQQ5XKq/03u6hWkySCZCxBSCNN5T4yQ9hyyygxYhYhLRKZzRAy4dmnSoqzz8RIgYQpABFQKtNmN3CIYkYCJETCNWi0rJ0e6QYqfYjAJAESIOIzqN9U7jPn1B0OGWrWlMESKaCFIM6w527TZTaAApQsQkIjUYU8ORDGfRxd+aPBMh4hCCbuxU/FoGaaFJSYcAYqdIhIiDiOpwqhbXKQqkz+gMC4sQMY2gAWAaOkzJET0MSRAqQsQ0YudAow30aqGpwdk6sUWIOIAoD5NmQJYW0BnU2qoAihBxALH7ENIkJAcaSZqWG1+EiAEEDbbI4dZp0qeNTooOIkRMIVaJPjm4UgOdFNlIgoUGVESIOIQoh0A2kheU0DSaOCJEvAtBism7zfmdxAsXlEWIGECQw6/TJCT3k4JBOeQiQsQAgjTHaZMxJVHdoeH0GSJETCFI47tTMCbN904AunxNhIgBBFnIncXS93fAIkRMItJFmvQ0KExfGnTAS4SISURnM3YHf+k9pKhWBoAiRBxGkKZflbTsbGw6xNIOAEWIOISgw7fpUNwpMKSB9+U/RYSINyDQoEhYBC0Sk0La1sYWIeIwggR7qYlCmvyrL5Xbh50IERsIEgCSLwDaWOk2LdGAiggRhxAkcEsDjjSgSxu72uhlAChCxCHEJ18iRIgQIWLs+gYlfL/dJ1DmtgAAAABJRU5ErkJggg==" alr="QRCode">
-        </li>
-        
-
-    </ul>
-</div>
-    
-    
-</nav>
-</header>
-
-            
-    <!-- ## Post ## -->
-    <div class="post-container">
-    <div id="post-card" class="card">
-        
-            <div class="card-image lazyload" data-bg="url('/uploads/9966.png')"></div>
-        
-        <div class="card-item-container">
-            <div class="card-inner-cell">
-                <!-- # Post Header Info # -->
-                <div class="card-header">
-                    
-    <h1 class="card-title h3 mb-2">《亲爱的安吉维拉》</h1>
-
-
-
-
-<div class="post-header-info">
-    <p class="post-header-info-left text-gray">
-        <img class="author-thumb lazyload" data-src="/uploads/666.png" src="/img/suka-lazyload.gif" alt="星晞子's Avatar">
-        <span>2021-01-13</span>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
         
         
-            <!-- Busuanzi Post Views -->
-<span id="busuanzi_container_page_pv" hidden>
-    <span class="suka-devide-dot"></span>
-    <span></span>
-    <span id="busuanzi_value_page_pv"></span>
-    <span>Views</span>
-</span>
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
         
         
-    </p>
-    <div class="post-header-info-right">
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
         
-            <div class="dropdown dropdown-right">
-<a class="dropdown-toggle" tabindex="0">Share the post</a>
-<ul class="menu share-menu">
-    <!-- Share Weibo -->
-    
-
-    <!-- Share Twitter -->
-    
-    <li class="menu-item">
-        <a href="https://twitter.com/intent/tweet?text=《亲爱的安吉维拉》&url=www.noshegood.com/2021/01/13/%E3%80%8A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%AE%89%E5%90%89%E7%BB%B4%E6%8B%89%E3%80%8B/&via=星晞子" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
-    </li>
-    
-
-    <!-- Share Facebook -->
-    
-    <li class="menu-item">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=www.noshegood.com/2021/01/13/%E3%80%8A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%AE%89%E5%90%89%E7%BB%B4%E6%8B%89%E3%80%8B/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
-    </li>
-    
-
-    <!-- Share Google+ -->
-    
-
-    <!-- Share LinkedIn -->
-    
-
-    <!-- Share QQ -->
-    
-
-    <!-- Share Telegram -->
-    
-    <li class="menu-item">
-        <a href="https://t.me/share/url?url=www.noshegood.com/2021/01/13/%E3%80%8A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%AE%89%E5%90%89%E7%BB%B4%E6%8B%89%E3%80%8B/&text=星晞子" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
-    </li>
-    
-
-    <!-- QRCode -->
-    
-    <li class="menu-item">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAAAAADlzdG3AAADKElEQVR42u3a207DMBBF0f7/T8MTUoXiOXscT0vRzguINqkXkuu5Pb7+wfUQIUKECBHjiEdx/by+fMiv157ve3796pm/31vdc7UuESImEWmBK9Dq4at70md13itCxDSCbOjVxt3dyNVnknWJEPEOxGoxaUNf/U4POBEiPgFRLQ4HbPASIeIvIFJQRjDpQLt6P024bkWxIkQ0EXSDvfrn8WqHCBEAEYu2IGmpNmu1easE6WhVXISIZn/iTrJ/JxBcFR/SvSJETCPIAVcdhjQRqp5dFQqWxTwRIgYQqYF4ooFS4avidVXMFiFiEkEWRDYsSbBSw54cuCJETCI6TcIqCUrFsU5RrSquiRDxKgRNjLrJPw0ySfE5bmwRIg4gOsUsEvilZIc2WEghToSICQQ5XKq/03u6hWkySCZCxBSCNN5T4yQ9hyyygxYhYhLRKZzRAy4dmnSoqzz8RIgYQpABFQKtNmN3CIYkYCJETCNWi0rJ0e6QYqfYjAJAESIOIzqN9U7jPn1B0OGWrWlMESKaCFIM6w527TZTaAApQsQkIjUYU8ORDGfRxd+aPBMh4hCCbuxU/FoGaaFJSYcAYqdIhIiDiOpwqhbXKQqkz+gMC4sQMY2gAWAaOkzJET0MSRAqQsQ0YudAow30aqGpwdk6sUWIOIAoD5NmQJYW0BnU2qoAihBxALH7ENIkJAcaSZqWG1+EiAEEDbbI4dZp0qeNTooOIkRMIVaJPjm4UgOdFNlIgoUGVESIOIQoh0A2kheU0DSaOCJEvAtBism7zfmdxAsXlEWIGECQw6/TJCT3k4JBOeQiQsQAgjTHaZMxJVHdoeH0GSJETCFI47tTMCbN904AunxNhIgBBFnIncXS93fAIkRMItJFmvQ0KExfGnTAS4SISURnM3YHf+k9pKhWBoAiRBxGkKZflbTsbGw6xNIOAEWIOISgw7fpUNwpMKSB9+U/RYSINyDQoEhYBC0Sk0La1sYWIeIwggR7qYlCmvyrL5Xbh50IERsIEgCSLwDaWOk2LdGAiggRhxAkcEsDjjSgSxu72uhlAChCxCHEJ18iRIgQIWLs+gYlfL/dJ1DmtgAAAABJRU5ErkJggg==" alt="QRCode">
-    </li>
-    
-
-</ul>
-</div>
-        
+      </ul>
     </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="《亲爱的安吉维拉》">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-01-13 17:20" pubdate>
+        2021年1月13日 下午
+      </time>
+    </span>
+  
 </div>
-                </div>
-                <div class="card-body">
-                    
-                        
-                        
-                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#成为一个全面的人"><span class="post-toc-number">1.</span> <span class="post-toc-text">成为一个全面的人</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#共同协作"><span class="post-toc-number">2.</span> <span class="post-toc-text">共同协作</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#教育她“性别角色”是彻底的胡扯。绝对不要让她“因为你是女孩”所以该做什么或不该做什么。"><span class="post-toc-number">3.</span> <span class="post-toc-text">教育她“性别角色”是彻底的胡扯。绝对不要让她“因为你是女孩”所以该做什么或不该做什么。</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#要留心“伪女权主义者”话术中关于权力的支配的破绽"><span class="post-toc-number">4.</span> <span class="post-toc-text">要留心“伪女权主义者”话术中关于权力的支配的破绽</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#学习阅读，喜爱书籍。"><span class="post-toc-number">5.</span> <span class="post-toc-text">学习阅读，喜爱书籍。</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#学会质疑语言"><span class="post-toc-number">6.</span> <span class="post-toc-text">学会质疑语言</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#千万不要将婚姻当作成就"><span class="post-toc-number">7.</span> <span class="post-toc-text">千万不要将婚姻当作成就</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#不要把讨人喜欢这件事放在心上"><span class="post-toc-number">8.</span> <span class="post-toc-text">不要把讨人喜欢这件事放在心上</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#身份认同、种族与特权"><span class="post-toc-number">9.</span> <span class="post-toc-text">身份认同、种族与特权</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#慎重对待与她交流以及谈论她外表的方式"><span class="post-toc-number">10.</span> <span class="post-toc-text">慎重对待与她交流以及谈论她外表的方式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#教导她在我们的文化选择性地使用生理因素作为社会规范时表示质疑"><span class="post-toc-number">11.</span> <span class="post-toc-text">教导她在我们的文化选择性地使用生理因素作为社会规范时表示质疑</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#和她谈论性，并且早些开始。这或许会有点尴尬，但却是必需的。"><span class="post-toc-number">12.</span> <span class="post-toc-text">和她谈论性，并且早些开始。这或许会有点尴尬，但却是必需的。</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#恋爱将会发生"><span class="post-toc-number">13.</span> <span class="post-toc-text">恋爱将会发生</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在教导她什么是压迫时-注意不要把受压迫者描述成圣人。"><span class="post-toc-number">14.</span> <span class="post-toc-text">在教导她什么是压迫时, 注意不要把受压迫者描述成圣人。</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#教导她什么是差别，让差异成为寻常的事。"><span class="post-toc-number">15.</span> <span class="post-toc-text">教导她什么是差别，让差异成为寻常的事。</span></a></li></ol></div>
-                        
-                    
-                    <article id="post-content">
-                        <p>一份包含15条建议的女权主义宣言。<a id="more"></a><br><font face="微软雅黑" color=dimgray></p>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      8k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      79
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">《亲爱的安吉维拉》</h1>
+            
+            <div class="markdown-body">
+              <p>一份包含15条建议的女权主义宣言。<a id="more"></a><br><font face="微软雅黑" color=dimgray></p>
 <h3 id="成为一个全面的人"><a href="#成为一个全面的人" class="headerlink" title="成为一个全面的人"></a>成为一个全面的人</h3><p>为人母是件无比荣耀的礼物,但不要只用母亲的身份定义自己。做一个全面的人。你的孩子将因此受益。美国新闻界的先锋人物马琳·桑德斯曾对一个年轻的新闻工作者说：“千万不要因为忙于工作而道歉。你热爱自己做的事，而热爱是你能给予孩子的伟大的礼物。” 你甚至不必爱你的工作；你可以只爱那些职业带给你的东西——工作和收入带来的自信和自我满足。不要理睬那种认为做母亲和工作两者是互相排斥的观念。</p>
 <p>善待自己。寻求帮助。也应该得到帮助。不存在“超级女性”这种生物。为人父母是熟能生巧的事——这事还关乎爱。( 我真心希望“为人父母”尚未演变为一个动词，我觉得这正是中产阶级的“为人父母”变成一场无尽而焦虑的悔恨之旅这一现象出现的根源。)</p>
 <p>请不要认为育儿是“一人独揽”的事。我们的文化提倡女人能够“一人独揽”的观念但并不追问这种赞美的前提是什么。我对关于女人“一人独揽”的争论毫无兴趣，因为这场辩论将育儿和家务设定为女性专属的领域，这是我强烈反对的观念。家务与育儿应该是中性的，我们该问的不是女性能否“一人独揽”，而是该如何最好地支持父母双方在工作与家务中共同尽到责任。</p>
@@ -463,126 +293,215 @@
 <p>告诉她有些人是同性恋，有些不是。有些孩子有两个爸爸或者两个妈妈，因为有人就是这样。告诉她有人去清真寺有人去教堂有人去其他宗教场所做礼拜，还有人根本不做礼拜，因为这就是有些人的生活方式。</p>
 <p>请注意我不是建议你将她培养成“不加评判”的人，这是个现今常用的说法，这令我有点担忧。这个说法隐含的本意是好的，但“不加评判”的意思很容易退化成“对一切毫无观点”。所以，我对女士们有不同的期望：她们会拥有很多观点，而且她的观点将来自见多识广、仁慈善良、心胸广阔的灵魂。</font></p>
 
-                    </article>
-                    
-
-
-
-<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2021-01-13T09:20:33.000Z" itemprop="datePublished">2021-01-13</time>
-
-</p>
-<p class="post-footer-info mb-0 pt-2">
-
-
-
-<span class="post-tags-list mt-2">
-
-<a class="post-tags-list-item" href="/tags/Book-Report/" rel="tag">#&nbsp;Book Report</a>
-
-</span>
-
-
-</p>
-
-                </div>
-                <div class="post-nav px-2 bg-gray">
-<ul class="pagination">
-    <!-- Prev Nav -->
-    
-        <li class="page-item page-prev">
-            <a href="/2021/01/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E8%A6%81%E6%9C%89%E5%90%8D%E5%AD%97/" rel="prev">
-                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
-                <div class="page-item-subtitle">为什么人要有名字</div>
-            </a>
-        </li>
-    
-
-    <!-- Next Nav -->
-    
-        <li class="page-item page-next">
-            <a href="/2020/06/27/%E3%80%8A%E5%A5%B3%E3%81%8E%E3%82%89%E3%81%84%EF%BC%9A%E6%97%A5%E6%9C%AC%E5%A5%B3%E6%80%A7%E7%9A%84%E5%AB%8C%E6%81%B6%E3%80%8B/" rel="next">
-                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
-                <div class="page-item-subtitle">《女ぎらい：日本女性的嫌恶》</div>
-            </a>
-        </li>
-    
-</ul>
-</div>
-
-                
-                    <!-- # Comment # -->
-                    
-                
             </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Book-Report/">Book Report</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/01/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E8%A6%81%E6%9C%89%E5%90%8D%E5%AD%97/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">为什么人要有名字</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/06/27/%E3%80%8A%E5%A5%B3%E3%81%8E%E3%82%89%E3%81%84%EF%BC%9A%E6%97%A5%E6%9C%AC%E5%A5%B3%E6%80%A7%E7%9A%84%E5%AB%8C%E6%81%B6%E3%80%8B/">
+                        <span class="hidden-mobile">《女ぎらい：日本女性的嫌恶》</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
+      </div>
     </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
 </div>
 
-            <!-- ### Footer ### -->
-            <footer class="text-center">
-    <!-- footer copyright -->
+      </div>
     
-        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
-            <a class="footer-copyright-a" href="www.noshegood.com">星晞子</a>
-        </p>
+  </div>
+</div>
 
-    <!-- footer custom text -->
-    <p class="footer-text mb-0">
+<!-- Custom -->
+
+
     
-    </p>
-    <!-- footer develop info -->
-    <p class="footer-develop mb-0">
-        
-    <!-- Busuanzi User Views -->
-    <span id="busuanzi_container_site_uv" hidden>
-        <span></span>
-        <span id="busuanzi_value_site_uv"></span>
-        <span>Viewers</span>
-        
-            <span>|</span>
-        
-    </span>
 
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
 
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
 
+    
+  </main>
 
-        
-        Powered by&nbsp;<!--
-         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
-         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
-    </p>
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
 </footer>
 
+<!-- SCRIPTS -->
 
-        <!-- ### Import File ### -->
-        <!-- ### Footer JS Import ### -->
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
 
-<script>
-
-    
-window.lazyLoadOptions = {
-    elements_selector: ".lazyload",
-    threshold: 50
-};
-document.getElementById('copyright-year').textContent = new Date().getFullYear();
-console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
-
-</script>
-
-<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
 
 
-<!-- Offset -->
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
 
 
 
 
-<!-- Comment -->
 
 
-<!-- ### Custom Footer ### -->
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
 
-    </body>
 
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
 </html>

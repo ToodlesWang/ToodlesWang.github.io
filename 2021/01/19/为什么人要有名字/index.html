@@ -1,516 +1,440 @@
+
+
 <!DOCTYPE html>
-
-<html lang="tc">
-    <head>
-    <meta charset="utf-8">
-    <!--
-        hexo-theme-suka © SukkaW
-        GitHub: https://github.com/SukkaW/hexo-theme-suka
-    -->
-
-    <!-- ### Resource Hint ### -->
-
-    <!-- ## DNS Prefetch ## -->
-    <meta http-equiv="x-dns-prefetch-control" content="on">
-
-<!-- busuanzi -->
-
-    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
-
-
-<!-- comment -->
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
 
 
 
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  
+    <meta name="description" content="">
+  
+  <meta name="author" content="星晞子">
+  <meta name="keywords" content="">
+  
+  <title>为什么人要有名字 - 星晞子</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
 
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
 
-
-<!-- analytics -->
-
-
-
-
-
-
-
-    <!-- ## Preload ## -->
+  
     
-    <!-- Busuanzi -->
     
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
-
-
-
-
-
-
-
-    <!-- ### Meta & Title & Info ### -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
-    <meta name="renderer" content="webkit">
-
-    <!-- Title -->
-    <title>为什么人要有名字 | 星晞子</title>
-
-    <!-- Favicons -->
-    <link rel="icon" type="image&#x2F;ico" href="/uploads/ico.ico"><link rel="apple-touch-icon" sizes="180x180" href="/uploads/favicon144%C3%97144.png"><link rel="icon" typt="image&#x2F;png" sizes="192x192" href="/uploads/favicon192%C3%97192.png"><link rel="icon" typt="image&#x2F;png" sizes="32x32" href="/uploads/favicon32%C3%9732.png"><link rel="icon" typt="image&#x2F;png" sizes="16x16" href="/uploads/favicon16%C3%9716.png"><link rel="mask-icon" href="/uploads/sgv.sgv" color="White"><meta name="theme-color" content="White">
-
-    <!-- ### Import File ### -->
-    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
-    body {
-        background-color: White;
-    }
-
-    a, a:visited {
-        color: DimGrey;
-    }
-
-    a:active, a:focus, a:hover {
-        color: DimGrey;
-        opacity: .75;
-    }
-
-    #post-content a,
-    #post-content a:hover,
-    #post-content a:focus,
-    #post-content a:visited {
-        color: DimGrey;
-        opacity: 1;
-    }
-
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
     
+  
 
-    .post-entry .card-body a {
-        color: Sienna;
-    }
-
-    .avatar {
-        background: Sienna;
-    }
-
-    .navbar-link,
-    .navbar-link:visited,
-    .timeline .timeline-item .timeline-icon.icon-lg {
-        color: Sienna;
-    }
-
-    .navbar-link:hover {
-        color: Sienna;
-        opacity: .8;
-    }
-
-    #search-input .btn,
-    #disqus_click_btn,
-    #disqus-switch-to-direct,
-    #disqus-loadmore-button {
-        background: Sienna;
-        border-color: Sienna;
-        color: #fff;
-    }
-
-    #post-toc a.post-toc-link,
-    #post-toc a.post-toc-link:visited,
-    .share-menu.menu .menu-item>a {
-        color: Sienna;
-    }
-
-    .share-menu.menu .menu-item>a:hover,
-    .share-menu.menu .menu-item>a:focus,
-    .share-menu.menu .menu-item>a:visited {
-        color: #50596c;
-        background: White;
-        opacity: .85;
-    }
-</style><link rel="stylesheet" href="/css/style.min.css">
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
 
 
 
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
 
 
-    <!-- Prettify Theme -->
-    
-    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
 
 
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"www.noshegood.com","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
 
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
 
-<script>
-/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
-!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
-</script>
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
 
-    <!-- ### Site Verification ### -->
-    
-
-
-    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="星晞子"><meta name="msapplication-starturl" content="www.noshegood.com"><meta name="msapplication-navbutton-color" content="White"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="星晞子"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="为什么人要有名字 | 星晞子"><meta property="og:site_name" content="星晞子"><meta property="og:type" content="article"><meta property="og:url" content="www.noshegood.com/2021/01/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E8%A6%81%E6%9C%89%E5%90%8D%E5%AD%97/"><meta property="og:locale" content="tc"><meta name="description" content="上个星期有一半的时间我都在对着一个问题咆哮：人为什么要有名字？起因是我在注册邮箱的时候不知道要如何编出一个能代表我自己且独立存在的域。这种事对于Alex来说很简单，他甚至会对我的问题感到鄙视。alex+姓+来自生日里的某个数字组合@gmail.com 就是这么简单。那么问题来了，我不是Alex，我又不是我自己，我到底应该叫什么？我为什么不是我自己呢，我真的蛮讨厌我的名字的。从小到大别人对我的名字的 - 星晞子 - 星晞子"><meta name="keywords" content="浴中奇思"><meta property="article:published_time" content="2021-01-19T14:15:41.000Z"><meta property="article:modified_time" content="2021-01-19T14:18:02.159Z"><meta property="og:updated_time" content="2021-01-19T14:18:02.159Z"><meta property="article:author" content="星晞子"><meta property="article:tag" content="浴中奇思"><meta name="twitter:card" content="summary">
-
-    
-
-    <!-- ### Canonical link ### -->
-    <link rel="canonical" href="www.noshegood.com/2021/01/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E8%A6%81%E6%9C%89%E5%90%8D%E5%AD%97/">
-
-    <meta name="generator" content="Hexo 4.2.1">
-
-    <!-- ### Analytics ### -->
-    
-
-
-
-
-
-
-
-    <!-- ### Structured Data ### -->
-    
-
-
-
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "url": "www.noshegood.com/2021/01/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E8%A6%81%E6%9C%89%E5%90%8D%E5%AD%97/",
-    "@type": "BlogPosting",
-    "logo": "www.noshegood.com/uploads/favicon192%C3%97192.png",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "www.noshegood.com/2021/01/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E8%A6%81%E6%9C%89%E5%90%8D%E5%AD%97/"
-    },
-    "headline": "为什么人要有名字 | 星晞子",
-    
-    "image": {
-        "@type": "ImageObject",
-        "url": "www.noshegood.com/uploads/favicon192%C3%97192.png"
-    },
-    
-    "datePublished": "2021-01-19T14:15:41.000Z",
-    "dateModified": "2021-01-19T14:18:02.159Z",
-    "author": {
-        "@type": "Person",
-        "name": "星晞子",
-        "image": {
-            "@type": "ImageObject",
-            "url": "www.noshegood.com/uploads/666.png"
-        },
-        "description": "用来收集碎片和储存书摘与笔记的博客"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "星晞子",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "www.noshegood.com/uploads/favicon192%C3%97192.png"
-        }
-    },
-    
-    "potentialAction": {
-        "@type": "SearchAction",
-        "target": "www.noshegood.com/search?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-    },
-    
-    "keywords": "浴中奇思",
-    "description": "上个星期有一半的时间我都在对着一个问题咆哮：人为什么要有名字？起因是我在注册邮箱的时候不知道要如何编出一个能代表我自己且独立存在的域。这种事对于Alex来说很简单，他甚至会对我的问题感到鄙视。alex+姓+来自生日里的某个数字组合@gmail.com 就是这么简单。那么问题来了，我不是Alex，我又不是我自己，我到底应该叫什么？我为什么不是我自己呢，我真的蛮讨厌我的名字的。从小到大别人对我的名字的 - 星晞子 - 星晞子"
-}
-</script>
-
-
-
-    <!-- ### Custom Head ### -->
-    
-</head>
-
-    <body>
-            
-
-            <!-- ### Main content ### -->
-            <!-- ## Header ##-->
-<header>
-    <h1 class="header-title text-center"><a href="/">星晞子</a></h1>
-
-    <p class="text-center header-slogan">
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-            
-                用来收集碎片和储存书摘与笔记的博客
-            
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
         
-    </p>
-
-    <nav class="navbar-section text-center">
-    
-        <a href="/" class="navbar-link">Home</a>
-    
-    
-        <a href="/archives/" class="navbar-link">Archives</a>
-    
-    
-        <a href="/search" class="navbar-link">Search</a>
-    
-    
-    
-        <div class="dropdown dropdown-right">
-    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
-    <ul class="menu share-menu">
-
-        <!-- Share Weibo -->
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
         
-
-        <!-- Share Twitter -->
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
         
-        <li class="menu-item">
-            <a href="https://twitter.com/intent/tweet?text=星晞子&url=www.noshegood.com&via=星晞子" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
-        </li>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
         
-
-        <!-- Share Facebook -->
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
         
-        <li class="menu-item">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=www.noshegood.com" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
-        </li>
         
-
-        <!-- Share Google+ -->
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
         
-
-        <!-- Share LinkedIn -->
         
-
-        <!-- Share QQ -->
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
         
-
-        <!-- Share Telegram -->
-        
-        <li class="menu-item">
-            <a href="https://t.me/share/url?url=www.noshegood.com&text=为什么人要有名字" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
-        </li>
-        
-
-        <!-- QRCode -->
-        
-        <li class="menu-item">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAAAAAAYplnuAAACrElEQVR42u3cS24CQRAEUe5/abw26q6MbBgkNMHGksHDG8ul+jV+PH/w8RAtWrToG6Ifw+PfD7x8f/f86prp9dQhWjRFL//oXy64g69QzU3vbmrpEC26QE8X3V1w9QbvBHJ6nWjRn0Kvnp8CZvdcuinRor+NPsVNgSla9FXoCbBLNqs3bZNOVbiJFg3RU+B88+vHunHRt0afFParoCFNQ9NQvDU1FX1r9BQIafhCGlZSjKX3Fy26RZPCnhT3u9emAJ8CecyIokXDJqAZntMEQhJLbIZFi4ZoFASb5ebpgpQEJ0ouokUPjW0qZtIg8vQm6HJKtGiKbhrSVCylgyop6MdfnmjRAD0FUUpA6Y3p4RU6FBItmqKbCzXNQ9sgxIJKtOgDNF3kk4QzNcX0cIBo0SfoaWE/NbtpkDMN59MwvyqYRIveDCBpcZOG4ORAFV28xqmpaNFhUZSCjjav04dvUiJDC33RouEAkg5SaHOQBozTzcVAFC0aNrZkiUSGOCeJB1d5okUXH2Rolu9NAXU6zBEtukFPA3EyYKfB2yyXtr8Y0aIhGi1pDgOIXpsM5kWLbtF0wH5aMKVkNh0AEC2aoslwmwzV46GpMDwnRZto0SfDmpPDUWlwSYojspgSLZqgyZKmSQh0mT81yGgAKVo0SC4pOeAkABacU4G1HWCKFl2i6QKnWfCThmGC4ypPtGiwrElF1fS6CZUWqsebANGi4ZI9HVohSeWk4cXJRbTo8h/tkIVSe/PkOnVjK1r0E/4jsuIwSRrANz+HBpCiRW+SCx0Y0iUpXdY3CUu06AbdBEpqclPSaRZIokVfhaYNbnMQnDQNokVfjSYNbAq0dO1tUIsWXaCb5Wda9jdNbjUMEi0aokmwTImFNgXt4cQxEEWL3qB/6SFatGjRN0L/AeC3mXcWuZKOAAAAAElFTkSuQmCC" alr="QRCode">
-        </li>
-        
-
-    </ul>
-</div>
-    
-    
+      </ul>
+    </div>
+  </div>
 </nav>
-</header>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="为什么人要有名字">
+              
+            </span>
 
             
-    <!-- ## Post ## -->
-    <div class="post-container">
-    <div id="post-card" class="card">
-        
-        <div class="card-item-container">
-            <div class="card-inner-cell">
-                <!-- # Post Header Info # -->
-                <div class="card-header">
-                    
-    <h1 class="card-title h3 mb-2">为什么人要有名字</h1>
-
-
-
-
-<div class="post-header-info">
-    <p class="post-header-info-left text-gray">
-        <img class="author-thumb lazyload" data-src="/uploads/666.png" src="/img/suka-lazyload.gif" alt="星晞子's Avatar">
-        <span>2021-01-19</span>
-        
-        
-            <!-- Busuanzi Post Views -->
-<span id="busuanzi_container_page_pv" hidden>
-    <span class="suka-devide-dot"></span>
-    <span></span>
-    <span id="busuanzi_value_page_pv"></span>
-    <span>Views</span>
-</span>
-        
-        
-    </p>
-    <div class="post-header-info-right">
-        
-            <div class="dropdown dropdown-right">
-<a class="dropdown-toggle" tabindex="0">Share the post</a>
-<ul class="menu share-menu">
-    <!-- Share Weibo -->
-    
-
-    <!-- Share Twitter -->
-    
-    <li class="menu-item">
-        <a href="https://twitter.com/intent/tweet?text=为什么人要有名字&url=www.noshegood.com/2021/01/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E8%A6%81%E6%9C%89%E5%90%8D%E5%AD%97/&via=星晞子" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
-    </li>
-    
-
-    <!-- Share Facebook -->
-    
-    <li class="menu-item">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=www.noshegood.com/2021/01/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E8%A6%81%E6%9C%89%E5%90%8D%E5%AD%97/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
-    </li>
-    
-
-    <!-- Share Google+ -->
-    
-
-    <!-- Share LinkedIn -->
-    
-
-    <!-- Share QQ -->
-    
-
-    <!-- Share Telegram -->
-    
-    <li class="menu-item">
-        <a href="https://t.me/share/url?url=www.noshegood.com/2021/01/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E8%A6%81%E6%9C%89%E5%90%8D%E5%AD%97/&text=星晞子" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
-    </li>
-    
-
-    <!-- QRCode -->
-    
-    <li class="menu-item">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAAAAAAYplnuAAACrElEQVR42u3cS24CQRAEUe5/abw26q6MbBgkNMHGksHDG8ul+jV+PH/w8RAtWrToG6Ifw+PfD7x8f/f86prp9dQhWjRFL//oXy64g69QzU3vbmrpEC26QE8X3V1w9QbvBHJ6nWjRn0Kvnp8CZvdcuinRor+NPsVNgSla9FXoCbBLNqs3bZNOVbiJFg3RU+B88+vHunHRt0afFParoCFNQ9NQvDU1FX1r9BQIafhCGlZSjKX3Fy26RZPCnhT3u9emAJ8CecyIokXDJqAZntMEQhJLbIZFi4ZoFASb5ebpgpQEJ0ouokUPjW0qZtIg8vQm6HJKtGiKbhrSVCylgyop6MdfnmjRAD0FUUpA6Y3p4RU6FBItmqKbCzXNQ9sgxIJKtOgDNF3kk4QzNcX0cIBo0SfoaWE/NbtpkDMN59MwvyqYRIveDCBpcZOG4ORAFV28xqmpaNFhUZSCjjav04dvUiJDC33RouEAkg5SaHOQBozTzcVAFC0aNrZkiUSGOCeJB1d5okUXH2Rolu9NAXU6zBEtukFPA3EyYKfB2yyXtr8Y0aIhGi1pDgOIXpsM5kWLbtF0wH5aMKVkNh0AEC2aoslwmwzV46GpMDwnRZto0SfDmpPDUWlwSYojspgSLZqgyZKmSQh0mT81yGgAKVo0SC4pOeAkABacU4G1HWCKFl2i6QKnWfCThmGC4ypPtGiwrElF1fS6CZUWqsebANGi4ZI9HVohSeWk4cXJRbTo8h/tkIVSe/PkOnVjK1r0E/4jsuIwSRrANz+HBpCiRW+SCx0Y0iUpXdY3CUu06AbdBEpqclPSaRZIokVfhaYNbnMQnDQNokVfjSYNbAq0dO1tUIsWXaCb5Wda9jdNbjUMEi0aokmwTImFNgXt4cQxEEWL3qB/6SFatGjRN0L/AeC3mXcWuZKOAAAAAElFTkSuQmCC" alt="QRCode">
-    </li>
-    
-
-</ul>
-</div>
-        
-    </div>
-</div>
-                </div>
-                <div class="card-body">
-                    
-                        
-                        
-                    
-                    <article id="post-content">
-                        <p>上个星期有一半的时间我都在对着一个问题咆哮：人为什么要有名字？<br>起因是我在注册邮箱的时候不知道要如何编出一个能代表我自己且独立存在的域。<br>这种事对于Alex来说很简单，他甚至会对我的问题感到鄙视。alex+姓+来自生日里的某个数字组合@gmail.com 就是这么简单。<br>那么问题来了，我不是Alex，我又不是我自己，我到底应该叫什么？我为什么不是我自己呢，我真的蛮讨厌我的名字的。从小到大别人对我的名字的反应都不会给我带来任何好事，因为我的名字“像男的”。起初被第一个人评价名字听起来“像男的”的时候我没有多想，但接着听到例如“噢你和我一个男同学的名字一样诶”这样发生在我身上的尴尬讨论会使年纪尚小的我感到迷惑。长大一点后我了解到有些家长给女孩子起“贱妹”“招娣”之类的名字，会觉得这种重男轻女的产物之一要伴随很多人的一生真的很痛苦，但就好像小时候在电视上看到留守儿童们很可怜于是会发自内心地为他们感到难过可等长大后我反应过来时才意识到自己也是留守儿童一样，突然有一天反应慢得要死如我也不得不承认我的名字只不过是二十年前家人对我这个新降临于世的女孩的诅咒与盼儿心切的私心的全部投射。<br>我不打算改名字了如果我以后不再会是中国人的话。就当是被法律承认过的狗皮膏药吧。就这样，我迷失在寻找身份认同的路上。<br>Alex说更喜欢叫我Stella, 因为星晞的意思就是twilight star, 但世界上叫Stella的女人又有几百万个呢？我不介意重名这种事，但总归是对身份认同这件事心存芥蒂，Stella可以是随便一个金发碧眼女人，甚至可以是Alex的炮友，但从来都不是我。<br>我觉得顶着由几个字母组成的名字、尽管据说这些名字被赋予了宗教或文化的意义以及父母的祝福、只为参与到社会被人更好地记住是超级无聊的事情。人们对异乡人的名字指指点点，在behindthename之类的网站上攻击彼此的名字由土又难听。但倘若你没名字那你可就是最大的异类。<br>我的专业是Robotic Engineering, 我希望我能拥有一组编号来代表我的身份，至于昵称什么的，机器人并不在乎。</p>
-
-                    </article>
-                    
-
-
-
-<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2021-01-19T14:15:41.000Z" itemprop="datePublished">2021-01-19</time>
-
-</p>
-<p class="post-footer-info mb-0 pt-2">
-
-
-
-<span class="post-tags-list mt-2">
-
-<a class="post-tags-list-item" href="/tags/%E6%B5%B4%E4%B8%AD%E5%A5%87%E6%80%9D/" rel="tag">#&nbsp;浴中奇思</a>
-
-</span>
-
-
-</p>
-
-                </div>
-                <div class="post-nav px-2 bg-gray">
-<ul class="pagination">
-    <!-- Prev Nav -->
-    
-
-    <!-- Next Nav -->
-    
-        <li class="page-item page-next">
-            <a href="/2021/01/13/%E3%80%8A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%AE%89%E5%90%89%E7%BB%B4%E6%8B%89%E3%80%8B/" rel="next">
-                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
-                <div class="page-item-subtitle">《亲爱的安吉维拉》</div>
-            </a>
-        </li>
-    
-</ul>
-</div>
-
-                
-                    <!-- # Comment # -->
-                    
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-            <!-- ### Footer ### -->
-            <footer class="text-center">
-    <!-- footer copyright -->
-    
-        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
-            <a class="footer-copyright-a" href="www.noshegood.com">星晞子</a>
-        </p>
-
-    <!-- footer custom text -->
-    <p class="footer-text mb-0">
-    
-    </p>
-    <!-- footer develop info -->
-    <p class="footer-develop mb-0">
-        
-    <!-- Busuanzi User Views -->
-    <span id="busuanzi_container_site_uv" hidden>
-        <span></span>
-        <span id="busuanzi_value_site_uv"></span>
-        <span>Viewers</span>
-        
-            <span>|</span>
-        
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-01-19 22:15" pubdate>
+        2021年1月19日 晚上
+      </time>
     </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      734 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      7
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">为什么人要有名字</h1>
+            
+            <div class="markdown-body">
+              <p>上个星期有一半的时间我都在对着一个问题咆哮：人为什么要有名字？<br>起因是我在注册邮箱的时候不知道要如何编出一个能代表我自己且独立存在的域。<br>这种事对于Alex来说很简单，他甚至会对我的问题感到鄙视。alex+姓+来自生日里的某个数字组合@gmail.com 就是这么简单。<br>那么问题来了，我不是Alex，我又不是我自己，我到底应该叫什么？我为什么不是我自己呢，我真的蛮讨厌我的名字的。从小到大别人对我的名字的反应都不会给我带来任何好事，因为我的名字“像男的”。起初被第一个人评价名字听起来“像男的”的时候我没有多想，但接着听到例如“噢你和我一个男同学的名字一样诶”这样发生在我身上的尴尬讨论会使年纪尚小的我感到迷惑。长大一点后我了解到有些家长给女孩子起“贱妹”“招娣”之类的名字，会觉得这种重男轻女的产物之一要伴随很多人的一生真的很痛苦，但就好像小时候在电视上看到留守儿童们很可怜于是会发自内心地为他们感到难过可等长大后我反应过来时才意识到自己也是留守儿童一样，突然有一天反应慢得要死如我也不得不承认我的名字只不过是二十年前家人对我这个新降临于世的女孩的诅咒与盼儿心切的私心的全部投射。<br>我不打算改名字了如果我以后不再会是中国人的话。就当是被法律承认过的狗皮膏药吧。就这样，我迷失在寻找身份认同的路上。<br>Alex说更喜欢叫我Stella, 因为星晞的意思就是twilight star, 但世界上叫Stella的女人又有几百万个呢？我不介意重名这种事，但总归是对身份认同这件事心存芥蒂，Stella可以是随便一个金发碧眼女人，甚至可以是Alex的炮友，但从来都不是我。<br>我觉得顶着由几个字母组成的名字、尽管据说这些名字被赋予了宗教或文化的意义以及父母的祝福、只为参与到社会被人更好地记住是超级无聊的事情。人们对异乡人的名字指指点点，在behindthename之类的网站上攻击彼此的名字由土又难听。但倘若你没名字那你可就是最大的异类。<br>我的专业是Robotic Engineering, 我希望我能拥有一组编号来代表我的身份，至于昵称什么的，机器人并不在乎。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%B5%B4%E4%B8%AD%E5%A5%87%E6%80%9D/">浴中奇思</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/01/13/%E3%80%8A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%AE%89%E5%90%89%E7%BB%B4%E6%8B%89%E3%80%8B/">
+                        <span class="hidden-mobile">《亲爱的安吉维拉》</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
 
 
+    
 
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
 
-        
-        Powered by&nbsp;<!--
-         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
-         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
-    </p>
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
 </footer>
 
+<!-- SCRIPTS -->
 
-        <!-- ### Import File ### -->
-        <!-- ### Footer JS Import ### -->
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
 
-<script>
-
-    
-window.lazyLoadOptions = {
-    elements_selector: ".lazyload",
-    threshold: 50
-};
-document.getElementById('copyright-year').textContent = new Date().getFullYear();
-console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
-
-</script>
-
-<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
 
 
-<!-- Offset -->
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
 
 
 
 
-<!-- Comment -->
 
 
-<!-- ### Custom Footer ### -->
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
 
-    </body>
 
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
 </html>

@@ -1,609 +1,603 @@
+
+
 <!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
 
-<html lang="tc">
-    <head>
-    <meta charset="utf-8">
-    <!--
-        hexo-theme-suka © SukkaW
-        GitHub: https://github.com/SukkaW/hexo-theme-suka
-    -->
 
-    <!-- ### Resource Hint ### -->
 
-    <!-- ## DNS Prefetch ## -->
-    <meta http-equiv="x-dns-prefetch-control" content="on">
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  
+    <meta name="description" content="">
+  
+  <meta name="author" content="星晞子">
+  <meta name="keywords" content="">
+  
+  <title>星晞子</title>
 
-<!-- busuanzi -->
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
-    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
 
 
-<!-- comment -->
+<!-- 主题依赖的图标库，不要自行修改 -->
 
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
 
 
 
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
 
 
+<link  rel="stylesheet" href="/css/main.css" />
 
-<!-- analytics -->
+<!-- 自定义样式保持在最底部 -->
 
 
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"www.noshegood.com","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
 
+<body>
+  <header style="height: 100vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
 
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
 
-
-    <!-- ## Preload ## -->
-    
-    <!-- Busuanzi -->
-    
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
-
-
-
-
-
-
-
-    <!-- ### Meta & Title & Info ### -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
-    <meta name="renderer" content="webkit">
-
-    <!-- Title -->
-    <title>星晞子</title>
-
-    <!-- Favicons -->
-    <link rel="icon" type="image&#x2F;ico" href="/uploads/ico.ico"><link rel="apple-touch-icon" sizes="180x180" href="/uploads/favicon144%C3%97144.png"><link rel="icon" typt="image&#x2F;png" sizes="192x192" href="/uploads/favicon192%C3%97192.png"><link rel="icon" typt="image&#x2F;png" sizes="32x32" href="/uploads/favicon32%C3%9732.png"><link rel="icon" typt="image&#x2F;png" sizes="16x16" href="/uploads/favicon16%C3%9716.png"><link rel="mask-icon" href="/uploads/sgv.sgv" color="White"><meta name="theme-color" content="White">
-
-    <!-- ### Import File ### -->
-    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
-    body {
-        background-color: White;
-    }
-
-    a, a:visited {
-        color: DimGrey;
-    }
-
-    a:active, a:focus, a:hover {
-        color: DimGrey;
-        opacity: .75;
-    }
-
-    #post-content a,
-    #post-content a:hover,
-    #post-content a:focus,
-    #post-content a:visited {
-        color: DimGrey;
-        opacity: 1;
-    }
-
-    
-
-    .post-entry .card-body a {
-        color: Sienna;
-    }
-
-    .avatar {
-        background: Sienna;
-    }
-
-    .navbar-link,
-    .navbar-link:visited,
-    .timeline .timeline-item .timeline-icon.icon-lg {
-        color: Sienna;
-    }
-
-    .navbar-link:hover {
-        color: Sienna;
-        opacity: .8;
-    }
-
-    #search-input .btn,
-    #disqus_click_btn,
-    #disqus-switch-to-direct,
-    #disqus-loadmore-button {
-        background: Sienna;
-        border-color: Sienna;
-        color: #fff;
-    }
-
-    #post-toc a.post-toc-link,
-    #post-toc a.post-toc-link:visited,
-    .share-menu.menu .menu-item>a {
-        color: Sienna;
-    }
-
-    .share-menu.menu .menu-item>a:hover,
-    .share-menu.menu .menu-item>a:focus,
-    .share-menu.menu .menu-item>a:visited {
-        color: #50596c;
-        background: White;
-        opacity: .85;
-    }
-</style><link rel="stylesheet" href="/css/style.min.css">
-
-
-
-
-
-
-
-
-    <!-- Prettify Theme -->
-    
-
-
-
-
-<script>
-/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
-!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
-</script>
-
-    <!-- ### Site Verification ### -->
-    
-
-
-    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="星晞子"><meta name="msapplication-starturl" content="www.noshegood.com"><meta name="msapplication-navbutton-color" content="White"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="星晞子"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="星晞子"><meta property="og:site_name" content="星晞子"><meta property="og:type" content="website"><meta property="og:url" content="www.noshegood.com/"><meta property="og:locale" content="tc"><meta name="description" content="星晞子 - 星晞子">
-
-    
-
-    <!-- ### Canonical link ### -->
-    <link rel="canonical" href="www.noshegood.com/">
-
-    <meta name="generator" content="Hexo 4.2.1">
-
-    <!-- ### Analytics ### -->
-    
-
-
-
-
-
-
-
-    <!-- ### Structured Data ### -->
-    
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "Blog",
-    "author": {
-        "@type": "Person",
-        "name": "星晞子",
-        "image": {
-            "@type": "ImageObject",
-            "url": "www.noshegood.com/uploads/666.png"
-        },
-        "description": "用来收集碎片和储存书摘与笔记的博客"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "星晞子",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "www.noshegood.com/uploads/favicon192%C3%97192.png"
-        }
-    },
-    "url": "www.noshegood.com",
-    "logo": "www.noshegood.com/uploads/favicon192%C3%97192.png",
-    "image": {
-        "@type": "ImageObject",
-        "url": "www.noshegood.com/uploads/favicon192%C3%97192.png"
-    },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "www.noshegood.com"
-    },
-    
-    "potentialAction": {
-        "@type": "SearchAction",
-        "target": "www.noshegood.com/search?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-    },
-    
-    "keywords": "",
-    "description": "星晞子 - 星晞子"
-}
-</script>
-
-
-
-
-
-    <!-- ### Custom Head ### -->
-    
-</head>
-
-    <body>
-            
-
-            <!-- ### Main content ### -->
-            <!-- ## Header ##-->
-<header>
-    <h1 class="header-title text-center"><a href="/">星晞子</a></h1>
-
-    <p class="text-center header-slogan">
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-            
-                用来收集碎片和储存书摘与笔记的博客
-            
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
         
-    </p>
-
-    <nav class="navbar-section text-center">
-    
-        <a href="/" class="navbar-link">Home</a>
-    
-    
-        <a href="/archives/" class="navbar-link">Archives</a>
-    
-    
-        <a href="/search" class="navbar-link">Search</a>
-    
-    
-    
-        <div class="dropdown dropdown-right">
-    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
-    <ul class="menu share-menu">
-
-        <!-- Share Weibo -->
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
         
-
-        <!-- Share Twitter -->
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
         
-        <li class="menu-item">
-            <a href="https://twitter.com/intent/tweet?text=星晞子&url=www.noshegood.com&via=星晞子" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
-        </li>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
         
-
-        <!-- Share Facebook -->
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
         
-        <li class="menu-item">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=www.noshegood.com" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
-        </li>
         
-
-        <!-- Share Google+ -->
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
         
-
-        <!-- Share LinkedIn -->
         
-
-        <!-- Share QQ -->
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
         
-
-        <!-- Share Telegram -->
-        
-        <li class="menu-item">
-            <a href="https://t.me/share/url?url=www.noshegood.com&text=" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
-        </li>
-        
-
-        <!-- QRCode -->
-        
-        <li class="menu-item">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAB0CAAAAABx8Un7AAABOklEQVR42u3a0Q7CMAiF4b3/S+u1CxxOR8dm8vdGjbOfiYy24PF5YBygoKCX0EOM8zXn5z8TOvOAjqHhj56gEWDPAzqKZpNUwaWuB30vGr2fBQzof6BREEWfB30XqgJDJYtbVhnQNqo2VCuP23aDoC20PPSIhVsFUOvUBtpCq5s+uibC1OdBZ9Fs0irxqwU9fQ06gqrChfOF3AMW6Dwqb2oRYM4CDzqPVot3dfNHBct2QRK0hVbFxywhqIQfBh/oGOomCQeWRUzQR9AsYWeLuVPYAn0HmjX1Vgocy4EEugVdKXSsbNhkwge9FV1pxLuH5q3df9BLqNM4cIqTZeCBjqJVw8AtQm7tFIPejqo/y1jNXtDXoBlcNY7a3X/QFupMsLIpb3X/Qduom7DdheBS4wB0Gzo5QEFBl8YXgqHxwvAaA0QAAAAASUVORK5CYII=" alr="QRCode">
-        </li>
-        
-
-    </ul>
-</div>
-    
-    
+      </ul>
+    </div>
+  </div>
 </nav>
-</header>
 
-            <div class="container">
-    <div class="main-container">
-        <main>
-            <div class="post-stream-container">
-                <!-- # Post List # -->
-                
-                    
-                        <article class="post-entry container px-0 card">
-        <div class="columns col-gapless">
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="An elegant Material-Design theme for Hexo">
+              
+            </span>
+
             
-                <div class="column col-12">
-                    
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/06/23/%E8%87%AA%E6%9D%80%E7%BA%AA%E5%BF%B5%E6%97%A5%E5%BF%AB%E4%B9%90/" rel="bookmark">📌 自杀纪念日快乐</a></h2>
+          </div>
 
-
-<p class="mb-0 card-body">
-    
-        2019.5.25 自杀与很多饱受精神...
-    <a href="/2020/06/23/%E8%87%AA%E6%9D%80%E7%BA%AA%E5%BF%B5%E6%97%A5%E5%BF%AB%E4%B9%90/">Read more</a>
-</p>
-
-
-
-
-    <!-- Date & Category -->
-    <div class="card-footer post-entry-info text-gray">
-        <img class="author-thumb lazyload" data-src="/uploads/666.png" src="/img/suka-lazyload.gif" alt="星晞子's Avatar">
-        <time>2020-06-23</time>
-        
-            <span class="suka-devide-dot"></span>
-            <a class="category-link" href="/categories/Psychiatry/">Psychiatry</a>
-        
-        
-    </div>
-
-                </div>
-            
-        </div>
-</article>
-
-                    
-                
-                    
-                        <article class="post-entry container px-0 card">
-        <div class="columns col-gapless">
-            
-                <div class="column col-12">
-                    
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2021/01/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E8%A6%81%E6%9C%89%E5%90%8D%E5%AD%97/" rel="bookmark">为什么人要有名字</a></h2>
-
-
-<p class="mb-0 card-body">
-    
-        上个星期有一半的时间我都在对着一个问题咆哮：人为什么要有名字？起因是我在注册邮箱的时候不知道要如何编出一个能代表我自己且独立存在的域。这种事对于Alex来说很简单，他甚至会对我的问题感到鄙视。alex+姓+来自生...
-    <a href="/2021/01/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E8%A6%81%E6%9C%89%E5%90%8D%E5%AD%97/">Read more</a>
-</p>
-
-
-
-
-    <!-- Date & Category -->
-    <div class="card-footer post-entry-info text-gray">
-        <img class="author-thumb lazyload" data-src="/uploads/666.png" src="/img/suka-lazyload.gif" alt="星晞子's Avatar">
-        <time>2021-01-19</time>
-        
-        
-    </div>
-
-                </div>
-            
-        </div>
-</article>
-
-                    
-                
-                    
-                        <article class="post-entry container px-0 card">
-        <div class="columns col-gapless">
-            
-                <div class="column column-thumbnail col-4 col-lg-12">
-                    <a href="/2021/01/13/%E3%80%8A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%AE%89%E5%90%89%E7%BB%B4%E6%8B%89%E3%80%8B/">
-                        <div class="post-thumbnail lazyload" data-bg="url(/uploads/9966.png)"></div>
-                    </a>
-                </div>
-                <div class="column column-body col-8 col-lg-12">
-                    
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2021/01/13/%E3%80%8A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%AE%89%E5%90%89%E7%BB%B4%E6%8B%89%E3%80%8B/" rel="bookmark">《亲爱的安吉维拉》</a></h2>
-
-
-<p class="mb-0 card-body">
-    
-        一份包含15条建议的女权主义宣言。
-    <a href="/2021/01/13/%E3%80%8A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%AE%89%E5%90%89%E7%BB%B4%E6%8B%89%E3%80%8B/">Read more</a>
-</p>
-
-
-
-
-    <!-- Date & Category -->
-    <div class="card-footer post-entry-info text-gray">
-        <img class="author-thumb lazyload" data-src="/uploads/666.png" src="/img/suka-lazyload.gif" alt="星晞子's Avatar">
-        <time>2021-01-13</time>
-        
-        
-    </div>
-
-                </div>
-            
-        </div>
-</article>
-
-                    
-                
-                    
-                        <article class="post-entry container px-0 card">
-        <div class="columns col-gapless">
-            
-                <div class="column col-12">
-                    
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/06/27/%E3%80%8A%E5%A5%B3%E3%81%8E%E3%82%89%E3%81%84%EF%BC%9A%E6%97%A5%E6%9C%AC%E5%A5%B3%E6%80%A7%E7%9A%84%E5%AB%8C%E6%81%B6%E3%80%8B/" rel="bookmark">《女ぎらい：日本女性的嫌恶》</a></h2>
-
-
-<p class="mb-0 card-body">
-    
-        
-misogyny译为“厌女症”。可很多有厌女症的男人其实喜欢女人。明明“厌女”却又“喜欢女人”，听起来不可思议。那么，mIsogyny还有个更好懂的译法，“女性蔑视”
-    <a href="/2020/06/27/%E3%80%8A%E5%A5%B3%E3%81%8E%E3%82%89%E3%81%84%EF%BC%9A%E6%97%A5%E6%9C%AC%E5%A5%B3%E6%80%A7%E7%9A%84%E5%AB%8C%E6%81%B6%E3%80%8B/">Read more</a>
-</p>
-
-
-
-
-    <!-- Date & Category -->
-    <div class="card-footer post-entry-info text-gray">
-        <img class="author-thumb lazyload" data-src="/uploads/666.png" src="/img/suka-lazyload.gif" alt="星晞子's Avatar">
-        <time>2020-06-27</time>
-        
-            <span class="suka-devide-dot"></span>
-            <a class="category-link" href="/categories/Book-Report/">Book Report</a>
-        
-        
-    </div>
-
-                </div>
-            
-        </div>
-</article>
-
-                    
-                
-                    
-                        <article class="post-entry container px-0 card">
-        <div class="columns col-gapless">
-            
-                <div class="column column-thumbnail col-4 col-lg-12">
-                    <a href="/2020/06/23/%E3%80%8A%E4%BD%A0%E5%BD%93%E5%83%8F%E9%B8%9F%E9%A3%9E%E5%BE%80%E4%BD%A0%E7%9A%84%E5%B1%B1%E3%80%8B/">
-                        <div class="post-thumbnail lazyload" data-bg="url(/uploads/1029.png)"></div>
-                    </a>
-                </div>
-                <div class="column column-body col-8 col-lg-12">
-                    
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/06/23/%E3%80%8A%E4%BD%A0%E5%BD%93%E5%83%8F%E9%B8%9F%E9%A3%9E%E5%BE%80%E4%BD%A0%E7%9A%84%E5%B1%B1%E3%80%8B/" rel="bookmark">《你当像鸟飞往你的山》</a></h2>
-
-
-<p class="mb-0 card-body">
-    
-        我们都是摩门教的孩子。
-    <a href="/2020/06/23/%E3%80%8A%E4%BD%A0%E5%BD%93%E5%83%8F%E9%B8%9F%E9%A3%9E%E5%BE%80%E4%BD%A0%E7%9A%84%E5%B1%B1%E3%80%8B/">Read more</a>
-</p>
-
-
-
-
-    <!-- Date & Category -->
-    <div class="card-footer post-entry-info text-gray">
-        <img class="author-thumb lazyload" data-src="/uploads/666.png" src="/img/suka-lazyload.gif" alt="星晞子's Avatar">
-        <time>2020-06-23</time>
-        
-            <span class="suka-devide-dot"></span>
-            <a class="category-link" href="/categories/Book-Report/">Book Report</a>
-        
-        
-    </div>
-
-                </div>
-            
-        </div>
-</article>
-
-                    
-                
-                    
-                        <article class="post-entry container px-0 card">
-        <div class="columns col-gapless">
-            
-                <div class="column column-thumbnail col-4 col-lg-12">
-                    <a href="/2020/04/23/HWHBKDJJC/">
-                        <div class="post-thumbnail lazyload" data-bg="url(/uploads/654.png)"></div>
-                    </a>
-                </div>
-                <div class="column column-body col-8 col-lg-12">
-                    
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/04/23/HWHBKDJJC/" rel="bookmark">Hello World｜Hexo博客搭建教程</a></h2>
-
-
-<p class="mb-0 card-body">
-    
-        Welcome to Hexo! This is your first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or ask me on GitHub.
-    <a href="/2020/04/23/HWHBKDJJC/">Read more</a>
-</p>
-
-
-
-
-    <!-- Date & Category -->
-    <div class="card-footer post-entry-info text-gray">
-        <img class="author-thumb lazyload" data-src="/uploads/666.png" src="/img/suka-lazyload.gif" alt="星晞子's Avatar">
-        <time>2020-04-23</time>
-        
-            <span class="suka-devide-dot"></span>
-            <a class="category-link" href="/categories/Information-Technology/">Information Technology</a>
-        
-        
-    </div>
-
-                </div>
-            
-        </div>
-</article>
-
-                    
-                
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
             </div>
-        </main>
-        
-
+          
+        </div>
+      </div>
     </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          style=margin-top:0>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/06/23/%E8%87%AA%E6%9D%80%E7%BA%AA%E5%BF%B5%E6%97%A5%E5%BF%AB%E4%B9%90/">自杀纪念日快乐</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/06/23/%E8%87%AA%E6%9D%80%E7%BA%AA%E5%BF%B5%E6%97%A5%E5%BF%AB%E4%B9%90/">
+          
+          
+            
+          
+          2019.5.25 自杀与很多饱受精神疾病折磨且有自杀倾向的抑郁症患者相似，我选择在2019年5月25日的傍晚用最懦弱的方式来结束自己年仅十九岁的生命。大约五十粒Sertraline和五十粒Deanxit被我分成两次吞进了胃里，随后我便躺在床上平静地等待死亡。一切本应如同《完全自殺マニュアル》中所描述的那样“就像是自己动手进行脑叶切除手术使担负人体自我组织性的大脑失去协调，慢慢地睡着而且再也不会醒
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-06-23 15:21" pubdate>
+              2020-06-23
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Psychiatry/">Psychiatry</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Borderline-Personality-Disorder/">Borderline Personality Disorder</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/01/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E8%A6%81%E6%9C%89%E5%90%8D%E5%AD%97/">为什么人要有名字</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/01/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E8%A6%81%E6%9C%89%E5%90%8D%E5%AD%97/">
+          
+          
+            
+          
+          上个星期有一半的时间我都在对着一个问题咆哮：人为什么要有名字？起因是我在注册邮箱的时候不知道要如何编出一个能代表我自己且独立存在的域。这种事对于Alex来说很简单，他甚至会对我的问题感到鄙视。alex+姓+来自生日里的某个数字组合@gmail.com 就是这么简单。那么问题来了，我不是Alex，我又不是我自己，我到底应该叫什么？我为什么不是我自己呢，我真的蛮讨厌我的名字的。从小到大别人对我的名字的
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-01-19 22:15" pubdate>
+              2021-01-19
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%B5%B4%E4%B8%AD%E5%A5%87%E6%80%9D/">浴中奇思</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/01/13/%E3%80%8A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%AE%89%E5%90%89%E7%BB%B4%E6%8B%89%E3%80%8B/">《亲爱的安吉维拉》</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/01/13/%E3%80%8A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%AE%89%E5%90%89%E7%BB%B4%E6%8B%89%E3%80%8B/">
+          
+          
+            
+          
+          一份包含15条建议的女权主义宣言。
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-01-13 17:20" pubdate>
+              2021-01-13
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Book-Report/">Book Report</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/06/27/%E3%80%8A%E5%A5%B3%E3%81%8E%E3%82%89%E3%81%84%EF%BC%9A%E6%97%A5%E6%9C%AC%E5%A5%B3%E6%80%A7%E7%9A%84%E5%AB%8C%E6%81%B6%E3%80%8B/">《女ぎらい：日本女性的嫌恶》</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/06/27/%E3%80%8A%E5%A5%B3%E3%81%8E%E3%82%89%E3%81%84%EF%BC%9A%E6%97%A5%E6%9C%AC%E5%A5%B3%E6%80%A7%E7%9A%84%E5%AB%8C%E6%81%B6%E3%80%8B/">
+          
+          
+            
+          
+          
+misogyny译为“厌女症”。可很多有厌女症的男人其实喜欢女人。明明“厌女”却又“喜欢女人”，听起来不可思议。那么，mIsogyny还有个更好懂的译法，“女性蔑视”
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-06-27 13:10" pubdate>
+              2020-06-27
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Book-Report/">Book Report</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Feminism/">Feminism</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/06/23/%E3%80%8A%E4%BD%A0%E5%BD%93%E5%83%8F%E9%B8%9F%E9%A3%9E%E5%BE%80%E4%BD%A0%E7%9A%84%E5%B1%B1%E3%80%8B/">《你当像鸟飞往你的山》</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/06/23/%E3%80%8A%E4%BD%A0%E5%BD%93%E5%83%8F%E9%B8%9F%E9%A3%9E%E5%BE%80%E4%BD%A0%E7%9A%84%E5%B1%B1%E3%80%8B/">
+          
+          
+            
+          
+          我们都是摩门教的孩子。
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-06-23 15:26" pubdate>
+              2020-06-23
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Book-Report/">Book Report</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%91%A9%E9%97%A8%E6%95%99/">摩门教</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/04/23/HWHBKDJJC/">Hello World｜Hexo博客搭建教程</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/04/23/HWHBKDJJC/">
+          
+          
+            
+          
+          Welcome to Hexo! This is your first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or ask me on GitHub.
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-04-23 15:21" pubdate>
+              2020-04-23
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Information-Technology/">Information Technology</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Hexo/">Hexo</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
 </div>
-
-            <!-- ### Footer ### -->
-            <footer class="text-center">
-    <!-- footer copyright -->
     
-        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
-            <a class="footer-copyright-a" href="www.noshegood.com">星晞子</a>
-        </p>
 
-    <!-- footer custom text -->
-    <p class="footer-text mb-0">
     
-    </p>
-    <!-- footer develop info -->
-    <p class="footer-develop mb-0">
-        
-    <!-- Busuanzi User Views -->
-    <span id="busuanzi_container_site_uv" hidden>
-        <span></span>
-        <span id="busuanzi_value_site_uv"></span>
-        <span>Viewers</span>
-        
-            <span>|</span>
-        
-    </span>
+  </main>
 
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
 
+  
 
-
-        
-        Powered by&nbsp;<!--
-         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
-         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
-    </p>
+  
 </footer>
 
+<!-- SCRIPTS -->
 
-        <!-- ### Import File ### -->
-        <!-- ### Footer JS Import ### -->
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
 
-<script>
-
-    
-window.lazyLoadOptions = {
-    elements_selector: ".lazyload",
-    threshold: 50
-};
-document.getElementById('copyright-year').textContent = new Date().getFullYear();
-console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
-
-</script>
-
-<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
 
 
-<!-- Offset -->
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
 
 
 
 
-<!-- Comment -->
 
 
-<!-- ### Custom Footer ### -->
 
-    </body>
 
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
 </html>

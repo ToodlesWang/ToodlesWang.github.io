@@ -1,385 +1,339 @@
+
+
 <!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
 
-<html lang="tc">
-    <head>
-    <meta charset="utf-8">
-    <!--
-        hexo-theme-suka © SukkaW
-        GitHub: https://github.com/SukkaW/hexo-theme-suka
-    -->
 
-    <!-- ### Resource Hint ### -->
 
-    <!-- ## DNS Prefetch ## -->
-    <meta http-equiv="x-dns-prefetch-control" content="on">
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  
+    <meta name="description" content="">
+  
+  <meta name="author" content="星晞子">
+  <meta name="keywords" content="">
+  
+  <title>分类 - Information Technology - 星晞子</title>
 
-<!-- busuanzi -->
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
-    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
 
 
-<!-- comment -->
+<!-- 主题依赖的图标库，不要自行修改 -->
 
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
 
 
 
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
 
 
+<link  rel="stylesheet" href="/css/main.css" />
 
-<!-- analytics -->
+<!-- 自定义样式保持在最底部 -->
 
 
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"www.noshegood.com","root":"/","version":"1.8.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
 
+<body>
+  <header style="height: 60vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
 
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
 
-
-    <!-- ## Preload ## -->
-    
-    <!-- Busuanzi -->
-    
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
-
-
-
-
-
-
-
-    <!-- ### Meta & Title & Info ### -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
-    <meta name="renderer" content="webkit">
-
-    <!-- Title -->
-    <title>Category: Information Technology | 星晞子</title>
-
-    <!-- Favicons -->
-    <link rel="icon" type="image&#x2F;ico" href="/uploads/ico.ico"><link rel="apple-touch-icon" sizes="180x180" href="/uploads/favicon144%C3%97144.png"><link rel="icon" typt="image&#x2F;png" sizes="192x192" href="/uploads/favicon192%C3%97192.png"><link rel="icon" typt="image&#x2F;png" sizes="32x32" href="/uploads/favicon32%C3%9732.png"><link rel="icon" typt="image&#x2F;png" sizes="16x16" href="/uploads/favicon16%C3%9716.png"><link rel="mask-icon" href="/uploads/sgv.sgv" color="White"><meta name="theme-color" content="White">
-
-    <!-- ### Import File ### -->
-    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
-    body {
-        background-color: White;
-    }
-
-    a, a:visited {
-        color: DimGrey;
-    }
-
-    a:active, a:focus, a:hover {
-        color: DimGrey;
-        opacity: .75;
-    }
-
-    #post-content a,
-    #post-content a:hover,
-    #post-content a:focus,
-    #post-content a:visited {
-        color: DimGrey;
-        opacity: 1;
-    }
-
-    
-
-    .post-entry .card-body a {
-        color: Sienna;
-    }
-
-    .avatar {
-        background: Sienna;
-    }
-
-    .navbar-link,
-    .navbar-link:visited,
-    .timeline .timeline-item .timeline-icon.icon-lg {
-        color: Sienna;
-    }
-
-    .navbar-link:hover {
-        color: Sienna;
-        opacity: .8;
-    }
-
-    #search-input .btn,
-    #disqus_click_btn,
-    #disqus-switch-to-direct,
-    #disqus-loadmore-button {
-        background: Sienna;
-        border-color: Sienna;
-        color: #fff;
-    }
-
-    #post-toc a.post-toc-link,
-    #post-toc a.post-toc-link:visited,
-    .share-menu.menu .menu-item>a {
-        color: Sienna;
-    }
-
-    .share-menu.menu .menu-item>a:hover,
-    .share-menu.menu .menu-item>a:focus,
-    .share-menu.menu .menu-item>a:visited {
-        color: #50596c;
-        background: White;
-        opacity: .85;
-    }
-</style><link rel="stylesheet" href="/css/style.min.css">
-
-
-
-
-
-
-
-
-    <!-- Prettify Theme -->
-    
-
-
-
-
-<script>
-/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
-!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
-</script>
-
-    <!-- ### Site Verification ### -->
-    
-
-
-    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="星晞子"><meta name="msapplication-starturl" content="www.noshegood.com"><meta name="msapplication-navbutton-color" content="White"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="星晞子"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="Category: Information Technology | 星晞子"><meta property="og:site_name" content="星晞子"><meta property="og:type" content="website"><meta property="og:url" content="www.noshegood.com/categories/Information-Technology/"><meta property="og:locale" content="tc"><meta name="description" content="星晞子 - 星晞子">
-
-    
-
-    <!-- ### Canonical link ### -->
-    <link rel="canonical" href="www.noshegood.com/categories/Information-Technology/">
-
-    <meta name="generator" content="Hexo 4.2.1">
-
-    <!-- ### Analytics ### -->
-    
-
-
-
-
-
-
-
-    <!-- ### Structured Data ### -->
-    
-
-
-
-
-    <!-- ### Custom Head ### -->
-    
-</head>
-
-    <body>
-            
-
-            <!-- ### Main content ### -->
-            <!-- ## Header ##-->
-<header>
-    <h1 class="header-title text-center"><a href="/">星晞子</a></h1>
-
-    <p class="text-center header-slogan">
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-            
-                用来收集碎片和储存书摘与笔记的博客
-            
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
         
-    </p>
-
-    <nav class="navbar-section text-center">
-    
-        <a href="/" class="navbar-link">Home</a>
-    
-    
-        <a href="/archives/" class="navbar-link">Archives</a>
-    
-    
-        <a href="/search" class="navbar-link">Search</a>
-    
-    
-    
-        <div class="dropdown dropdown-right">
-    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
-    <ul class="menu share-menu">
-
-        <!-- Share Weibo -->
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
         
-
-        <!-- Share Twitter -->
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
         
-        <li class="menu-item">
-            <a href="https://twitter.com/intent/tweet?text=星晞子&url=www.noshegood.com&via=星晞子" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
-        </li>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
         
-
-        <!-- Share Facebook -->
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
         
-        <li class="menu-item">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=www.noshegood.com" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
-        </li>
         
-
-        <!-- Share Google+ -->
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
         
-
-        <!-- Share LinkedIn -->
         
-
-        <!-- Share QQ -->
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
         
-
-        <!-- Share Telegram -->
-        
-        <li class="menu-item">
-            <a href="https://t.me/share/url?url=www.noshegood.com&text=" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
-        </li>
-        
-
-        <!-- QRCode -->
-        
-        <li class="menu-item">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB3UlEQVR42u3by07AMAxE0f7/T8O2QvHMuHSRuDcbQH3kVMrLTrh+NiwXKFCgQC1Qlyj366vf/z5/f2f1bFUPqFmoZaNbVFLdt0KsgLYeUKNQqwa+qnxVsbrPdQxQ30O5wbNq4FVnAQVKQVxHAPVtVNVIVwu4tOKq0f97lQBqe5QLHN76+Wo0A2pblE06BIs1V9nrWRdQW6NU8FglLtQAmCY2WiM6qKNQSUIjGviKiVkNpLb3gToS1XlxkhCrFoSqM4Cah6oapEu6qkFWDZ4VDNQsVJqkV9fTAKT8aFAjUN1NH7fwSybmqjOBmoFyE6jatE4TGiqIBTUP1U1muInaJXHlc6BGoZJkRhIUdD8M1DxUGnSqDe0nA2w0ooM6EpUu0NLF3isJDlCjUG7iTf5OP86O6KCORbmXdCtIEh2g5qLShV0niZYGrO0NI1BHoFQiVQUC3Qk8Ck5BjUW5yTo9fNM5cAFqDioJPl0SVV13h73sziio41CuJA35yWGeaPAEdSQq3ZBODk6kC74okwfqaFSaQOtOzp2kCKh5KPcPF92Nx3RCtjsOoMah1ELvSXJNPgfqMygXZLh7ko4Dah4q3ZBMg9FO8gTUPFR6ELkbOHSSI6DmoHYqoECBAnUrv5NKP4679pYvAAAAAElFTkSuQmCC" alr="QRCode">
-        </li>
-        
-
-    </ul>
-</div>
-    
-    
+      </ul>
+    </div>
+  </div>
 </nav>
-</header>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="分类 - Information Technology">
+              
+            </span>
 
             
-    <div class="container">
-    <div class="main-container">
-        <main>
-            <!-- # Title # -->
-            <h2 class="page-title">Category : Information Technology</h2>
-            <!-- # Post List # -->
-            <div class="post-stream-container">
-                
-                    <div class="grid-item">
-                        <article class="post-entry container px-0 card">
-        <div class="columns col-gapless">
-            
-                <div class="column column-thumbnail col-4 col-lg-12">
-                    <a href="/2020/04/23/HWHBKDJJC/">
-                        <div class="post-thumbnail lazyload" data-bg="url(/uploads/654.png)"></div>
-                    </a>
-                </div>
-                <div class="column column-body col-8 col-lg-12">
-                    
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/04/23/HWHBKDJJC/" rel="bookmark">Hello World｜Hexo博客搭建教程</a></h2>
+          </div>
 
-
-<p class="mb-0 card-body">
-    
-        Welcome to Hexo! This is your first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or ask me on GitHub.
-    <a href="/2020/04/23/HWHBKDJJC/">Read more</a>
-</p>
-
-
-
-
-    <!-- Date & Category -->
-    <div class="card-footer post-entry-info text-gray">
-        <img class="author-thumb lazyload" data-src="/uploads/666.png" src="/img/suka-lazyload.gif" alt="星晞子's Avatar">
-        <time>2020-04-23</time>
-        
-            <span class="suka-devide-dot"></span>
-            <a class="category-link" href="/categories/Information-Technology/">Information Technology</a>
-        
-        
-    </div>
-
-                </div>
-            
+          
         </div>
-</article>
-
-                    </div>
-                
-            </div>
-        </main>
-        
-
+      </div>
     </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<div class="list-group">
+  <p class="h4">共计 1 篇文章</p>
+  <hr>
+  
+  
+    
+      
+      <p class="h5">2020</p>
+    
+    <a href="/2020/04/23/HWHBKDJJC/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">Hello World｜Hexo博客搭建教程</span>
+      <time style="float: right;">04-23</time>
+    </a>
+  
 </div>
 
 
-            <!-- ### Footer ### -->
-            <footer class="text-center">
-    <!-- footer copyright -->
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     
-        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
-            <a class="footer-copyright-a" href="www.noshegood.com">星晞子</a>
-        </p>
 
-    <!-- footer custom text -->
-    <p class="footer-text mb-0">
     
-    </p>
-    <!-- footer develop info -->
-    <p class="footer-develop mb-0">
-        
-    <!-- Busuanzi User Views -->
-    <span id="busuanzi_container_site_uv" hidden>
-        <span></span>
-        <span id="busuanzi_value_site_uv"></span>
-        <span>Viewers</span>
-        
-            <span>|</span>
-        
-    </span>
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
 
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
 
+    
+  </main>
 
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
 
-        
-        Powered by&nbsp;<!--
-         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
-         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
-    </p>
+  
+
+  
 </footer>
 
+<!-- SCRIPTS -->
 
-        <!-- ### Import File ### -->
-        <!-- ### Footer JS Import ### -->
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
 
-<script>
-
-    
-window.lazyLoadOptions = {
-    elements_selector: ".lazyload",
-    threshold: 50
-};
-document.getElementById('copyright-year').textContent = new Date().getFullYear();
-console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
-
-</script>
-
-<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
 
 
-<!-- Offset -->
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
 
 
 
 
-<!-- Comment -->
 
 
-<!-- ### Custom Footer ### -->
 
-    </body>
 
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
 </html>
