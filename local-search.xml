@@ -42,7 +42,7 @@
   
   
   <entry>
-    <title>《女ぎらい：日本女性的嫌恶》</title>
+    <title>《厌女》</title>
     <link href="/2020/06/27/%E3%80%8A%E5%A5%B3%E3%81%8E%E3%82%89%E3%81%84%EF%BC%9A%E6%97%A5%E6%9C%AC%E5%A5%B3%E6%80%A7%E7%9A%84%E5%AB%8C%E6%81%B6%E3%80%8B/"/>
     <url>/2020/06/27/%E3%80%8A%E5%A5%B3%E3%81%8E%E3%82%89%E3%81%84%EF%BC%9A%E6%97%A5%E6%9C%AC%E5%A5%B3%E6%80%A7%E7%9A%84%E5%AB%8C%E6%81%B6%E3%80%8B/</url>
     
@@ -55,12 +55,6 @@
       
     </categories>
     
-    
-    <tags>
-      
-      <tag>Feminism</tag>
-      
-    </tags>
     
   </entry>
   
@@ -81,12 +75,6 @@
     </categories>
     
     
-    <tags>
-      
-      <tag>摩门教</tag>
-      
-    </tags>
-    
   </entry>
   
   
@@ -101,16 +89,10 @@
     
     <categories>
       
-      <category>Psychiatry</category>
+      <category>Reminiscence</category>
       
     </categories>
     
-    
-    <tags>
-      
-      <tag>Borderline Personality Disorder</tag>
-      
-    </tags>
     
   </entry>
   
@@ -121,21 +103,15 @@
     <link href="/2020/04/23/HWHBKDJJC/"/>
     <url>/2020/04/23/HWHBKDJJC/</url>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>. <a id="more"></a></p><h2 id="为什么我要搭建博客"><a href="#为什么我要搭建博客" class="headerlink" title="为什么我要搭建博客"></a>为什么我要搭建博客</h2><p><font face="微软雅黑" color=dimgray>互联网时代带来的信息碎片化使信息的价值呈两极化发展：简短精炼的语句需要被投入的阅读时间及用来走马观花消耗的精力与其核心优势成正比；千篇万字的论文式文章愈发被大众抛弃，使其传播范围不如前者之广泛，受众群体易单一化。而作为注定与互联网绑定一生的网民但又同时无时无刻不在接收信息的我需要辨别好坏信息的能力，信息以毫秒为单位在我面前不断刷新，还未来得及消化上一条，下一条便接踵而至，信息的累计与重复、散落与零碎、节奏不一与被传播范围所局限在当下互联网几乎普及的今天使我感到十分困惑与窒息。当我选择用最简单的方式来记录这些有意义的、启发我的信息时，我发现现有的最简易最原始的存储信息的方式也是最无用的。在被国内某社交网站上移除了无数个账号后我彻底流浪在互联星河中，像一只脖子上系着铃铛但却浑身沾满泥巴的流浪猫无家可归。我的博客的建立倒不如说是被逼到无路可走，但也的确是在互联网找到靠谱又安全的托管星球的最原始最传统的方法。</font></p><h2 id="我的博客原理"><a href="#我的博客原理" class="headerlink" title="我的博客原理"></a>我的博客原理</h2><p><font face="微软雅黑" color=dimgray>毫无编程经验甚至在决定搭建博客之前都不知道Github是什么的小白如我在这方面有着不同于专业程序员的整套说法。比起照搬Hexo官网的简介与说明或是教科书般死板的定义，我更愿意贴合实际以及用那些不抽象的例子给正在Google搜索栏里输入【Hexo博客搭建教程】的新手们。搭建Hexo到使用的过程(搭建、更换主题、发布文章、学习Markdown语法，维修升级等)就好比从零房屋建造即使“从零”并不严谨，毕竟你已经拥有了联网的计算机。</font></p><table><thead><tr><th>房屋建造</th><th>搭建博客</th></tr></thead><tbody><tr><td>地基</td><td>Github Page静态网页</td></tr><tr><td>钢筋</td><td>Hexo</td></tr><tr><td>混凝土</td><td>发布的文章</td></tr><tr><td>装修</td><td>博客主题</td></tr></tbody></table><h2 id="教程选择建议"><a href="#教程选择建议" class="headerlink" title="教程选择建议"></a>教程选择建议</h2><p><font face="微软雅黑" color=dimgray>首先必须说明用Hexo搭建博客需要一定的编程经验，所以对于纯小白来说并不会是很轻松的体验。在我只靠自己搭建博客的初期曾浏览了网路上许多鱼龙混杂的文字教程，这些文字教程的大致内容虽然相仿但细分到其中的步骤顺序就显得出入很大，更无奈的是很多术业有专攻的程序员作者的表达能力实在堪忧，大部分文字教程只给我带来了干扰与困惑。相比之下我更推荐与我面临相同困境的新手直接跟着Youtube上的视频教程搭建博客，视频教程的优势在于完整地还原了搭建博客的每一个步骤，不需要根据文字凭空想象或小心翼翼地实操生怕出错。凭借视频教程的帮助我在很短的时间内就顺利搭建完成了自己的博客雏形，那时我才意识到自己在文字教程上浪费了太多的时间，同样也再次遗憾自己没有好的导师带领入门以及传授经验避免将时间浪费在踩雷掉坑之上。</p><p><strong>在此推荐曾经帮助过我的Youtube教学视频</strong></p><ul><li><a href="https://www.youtube.com/playlist?list=PLXbU-2B80FvDjD_RiuNwsSQ4eF8pkwAIa" target="_blank" rel="noopener">快速使用Hexo搭建个人博客</a></li><li><a href="https://www.youtube.com/playlist?list=PLD5dyQmlN6xPqBV0cxO7zAe1C8OmDPqfX" target="_blank" rel="noopener">Hexo静态网页制作教程</a></li></ul><h2 id="Hexo博客搭建详细教程-Windows"><a href="#Hexo博客搭建详细教程-Windows" class="headerlink" title="Hexo博客搭建详细教程|Windows"></a>Hexo博客搭建详细教程|Windows</h2><h3 id="安装Node-js与Git"><a href="#安装Node-js与Git" class="headerlink" title="安装Node.js与Git"></a>安装Node.js与Git</h3><ul><li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>本需不低于10.13 建议使用Node.js12及以上版本 <strong>推荐LTS版本</strong></li><li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>安装时一路<strong>Next</strong>即可<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3></li><li>搜索电脑应用<strong>命令提示符</strong></li><li>在<strong>命令提示符</strong>中输入如下代码 即使用npm安装Hexo<br><code>npm install -g hexo-cli</code></li></ul><p><strong>如果你卡在这步屏幕上没有出现+ <a href="mailto:&#104;&#x65;&#x78;&#x6f;&#x2d;&#99;&#x6c;&#105;&#x40;&#x78;&#46;&#x78;&#46;&#48;">&#104;&#x65;&#x78;&#x6f;&#x2d;&#99;&#x6c;&#105;&#x40;&#x78;&#46;&#x78;&#46;&#48;</a>则代表你没有安装成功，没有安装成功是由于中国大陆防火墙将中国大陆与世界分隔开来所以Node.js时不时失效，尽量确保你的电脑保持可以翻墙的状态。如果电脑已经处于可以使用谷歌看油管的状态却依旧卡在这步，请按照以下教程使用Node.js镜像版。</strong></p><ul><li>搜索电脑应用<strong>命令提示符</strong></li><li>在<strong>命令提示符</strong>中输入如下代码 安装Node.js镜像版<br><code>npm config set registry https://registry.npm.taobao.org</code></li><li>在<strong>命令提示符</strong>中输入如下代码 使用npm安装Hexo<br><code>npm install -g hexo-cli</code><br><font face="微软雅黑" color=dimgray>出现【+ <a href="mailto:&#x68;&#101;&#x78;&#x6f;&#x2d;&#x63;&#x6c;&#105;&#x40;&#x78;&#46;&#120;&#x2e;&#x30;">&#x68;&#101;&#x78;&#x6f;&#x2d;&#x63;&#x6c;&#105;&#x40;&#x78;&#46;&#120;&#x2e;&#x30;</a>】则代表Hexo初步安装成功！</font></li></ul><h3 id="初始化-建立博客文件夹"><a href="#初始化-建立博客文件夹" class="headerlink" title="初始化|建立博客文件夹"></a>初始化|建立博客文件夹</h3><ul><li>在命令提示符中输入hexo init <strong><em>nameofyourblog</em></strong> 以我自己的博客名字“Toodles”为例 我应输入：<br><code>hexo init Toodles</code></li></ul><p><strong>如果你卡在这步屏幕上没有出现“add xx packages in 6s”而是“npm error” 则说明博客文件夹建立成功但没有将Hexo在Github上的全部文件下载到博客文件夹中，这是很常见的问题。我们只需在命令提示符中继续输入如下代码：</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd Toodles</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><p><font face="微软雅黑" color=dimgray>出现【add xx packages in 6s】则代表博客文件夹建立/初始化成功！</font></p><h3 id="启动服务预览-预览你的博客"><a href="#启动服务预览-预览你的博客" class="headerlink" title="启动服务预览|预览你的博客"></a>启动服务预览|预览你的博客</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p><font face="微软雅黑" color=dimgray>出现【INFO Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a> . Press Ctrl+C to stop.】并在浏览器中打开其中的链接<a href="http://localhost:4000，且此网站为Hexo博客的雏形即算预览成功！">http://localhost:4000，且此网站为Hexo博客的雏形即算预览成功！</a></font></p><h3 id="使用Github建立静态网页"><a href="#使用Github建立静态网页" class="headerlink" title="使用Github建立静态网页"></a>使用Github建立静态网页</h3>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>. <a id="more"></a></p><h2 id="为什么我要搭建博客"><a href="#为什么我要搭建博客" class="headerlink" title="为什么我要搭建博客"></a>为什么我要搭建博客</h2><p><font face="微软雅黑" color=dimgray>互联网时代带来的信息碎片化使信息的价值呈两极化发展：简短精炼的语句需要被投入的阅读时间及用来走马观花消耗的精力与其核心优势成正比；千篇万字的论文式文章愈发被大众抛弃，使其传播范围不如前者之广泛，受众群体易单一化。而作为注定与互联网绑定一生的网民但又同时无时无刻不在接收信息的我需要辨别好坏信息的能力，信息以毫秒为单位在我面前不断刷新，还未来得及消化上一条，下一条便接踵而至，信息的累计与重复、散落与零碎、节奏不一与被传播范围所局限在当下互联网几乎普及的今天使我感到十分困惑与窒息。当我选择用最简单的方式来记录这些有意义的、启发我的信息时，我发现现有的最简易最原始的存储信息的方式也是最无用的。在被国内某社交网站上移除了无数个账号后我彻底流浪在互联星河中，像一只脖子上系着铃铛但却浑身沾满泥巴的流浪猫无家可归。我的博客的建立倒不如说是被逼到无路可走，但也的确是在互联网找到靠谱又安全的托管星球的最原始最传统的方法。</font></p><h2 id="我的博客原理"><a href="#我的博客原理" class="headerlink" title="我的博客原理"></a>我的博客原理</h2><p><font face="微软雅黑" color=dimgray>毫无编程经验甚至在决定搭建博客之前都不知道Github是什么的小白如我在这方面有着不同于专业程序员的整套说法。比起照搬Hexo官网的简介与说明或是教科书般死板的定义，我更愿意贴合实际以及用那些不抽象的例子给正在Google搜索栏里输入【Hexo博客搭建教程】的新手们。搭建Hexo到使用的过程(搭建、更换主题、发布文章、学习Markdown语法，维修升级等)就好比从零房屋建造即使“从零”并不严谨，毕竟你已经拥有了联网的计算机。</font></p><table><thead><tr><th>房屋建造</th><th>搭建博客</th></tr></thead><tbody><tr><td>地基</td><td>Github Page静态网页</td></tr><tr><td>钢筋</td><td>Hexo</td></tr><tr><td>混凝土</td><td>发布的文章</td></tr><tr><td>装修</td><td>博客主题</td></tr></tbody></table><h2 id="教程选择建议"><a href="#教程选择建议" class="headerlink" title="教程选择建议"></a>教程选择建议</h2><p><font face="微软雅黑" color=dimgray>首先必须说明用Hexo搭建博客需要一定的编程经验，所以对于纯小白来说并不会是很轻松的体验。在我只靠自己搭建博客的初期曾浏览了网路上许多鱼龙混杂的文字教程，这些文字教程的大致内容虽然相仿但细分到其中的步骤顺序就显得出入很大，更无奈的是很多术业有专攻的程序员作者的表达能力实在堪忧，大部分文字教程只给我带来了干扰与困惑。相比之下我更推荐与我面临相同困境的新手直接跟着Youtube上的视频教程搭建博客，视频教程的优势在于完整地还原了搭建博客的每一个步骤，不需要根据文字凭空想象或小心翼翼地实操生怕出错。凭借视频教程的帮助我在很短的时间内就顺利搭建完成了自己的博客雏形，那时我才意识到自己在文字教程上浪费了太多的时间，同样也再次遗憾自己没有好的导师带领入门以及传授经验避免将时间浪费在踩雷掉坑之上。</p><p><strong>在此推荐曾经帮助过我的Youtube教学视频</strong></p><ul><li><a href="https://www.youtube.com/playlist?list=PLXbU-2B80FvDjD_RiuNwsSQ4eF8pkwAIa" target="_blank" rel="noopener">快速使用Hexo搭建个人博客</a></li><li><a href="https://www.youtube.com/playlist?list=PLD5dyQmlN6xPqBV0cxO7zAe1C8OmDPqfX" target="_blank" rel="noopener">Hexo静态网页制作教程</a></li></ul><h2 id="Hexo博客搭建详细教程-Windows"><a href="#Hexo博客搭建详细教程-Windows" class="headerlink" title="Hexo博客搭建详细教程|Windows"></a>Hexo博客搭建详细教程|Windows</h2><h3 id="安装Node-js与Git"><a href="#安装Node-js与Git" class="headerlink" title="安装Node.js与Git"></a>安装Node.js与Git</h3><ul><li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>本需不低于10.13 建议使用Node.js12及以上版本 <strong>推荐LTS版本</strong></li><li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>安装时一路<strong>Next</strong>即可<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3></li><li>搜索电脑应用<strong>命令提示符</strong></li><li>在<strong>命令提示符</strong>中输入如下代码 即使用npm安装Hexo<br><code>npm install -g hexo-cli</code></li></ul><p><strong>如果你卡在这步屏幕上没有出现+ <a href="mailto:&#x68;&#x65;&#x78;&#x6f;&#x2d;&#x63;&#x6c;&#x69;&#x40;&#x78;&#46;&#120;&#x2e;&#x30;">&#x68;&#x65;&#x78;&#x6f;&#x2d;&#x63;&#x6c;&#x69;&#x40;&#x78;&#46;&#120;&#x2e;&#x30;</a>则代表你没有安装成功，没有安装成功是由于中国大陆防火墙将中国大陆与世界分隔开来所以Node.js时不时失效，尽量确保你的电脑保持可以翻墙的状态。如果电脑已经处于可以使用谷歌看油管的状态却依旧卡在这步，请按照以下教程使用Node.js镜像版。</strong></p><ul><li>搜索电脑应用<strong>命令提示符</strong></li><li>在<strong>命令提示符</strong>中输入如下代码 安装Node.js镜像版<br><code>npm config set registry https://registry.npm.taobao.org</code></li><li>在<strong>命令提示符</strong>中输入如下代码 使用npm安装Hexo<br><code>npm install -g hexo-cli</code><br><font face="微软雅黑" color=dimgray>出现【+ <a href="mailto:&#104;&#101;&#x78;&#111;&#45;&#x63;&#108;&#105;&#64;&#120;&#46;&#x78;&#x2e;&#48;">&#104;&#101;&#x78;&#111;&#45;&#x63;&#108;&#105;&#64;&#120;&#46;&#x78;&#x2e;&#48;</a>】则代表Hexo初步安装成功！</font></li></ul><h3 id="初始化-建立博客文件夹"><a href="#初始化-建立博客文件夹" class="headerlink" title="初始化|建立博客文件夹"></a>初始化|建立博客文件夹</h3><ul><li>在命令提示符中输入hexo init <strong><em>nameofyourblog</em></strong> 以我自己的博客名字“Toodles”为例 我应输入：<br><code>hexo init Toodles</code></li></ul><p><strong>如果你卡在这步屏幕上没有出现“add xx packages in 6s”而是“npm error” 则说明博客文件夹建立成功但没有将Hexo在Github上的全部文件下载到博客文件夹中，这是很常见的问题。我们只需在命令提示符中继续输入如下代码：</strong></p><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs properties"><span class="hljs-attr">cd</span> <span class="hljs-string">Toodles</span><br><span class="hljs-attr">npm</span> <span class="hljs-string">install</span><br></code></pre></td></tr></table></figure><p><font face="微软雅黑" color=dimgray>出现【add xx packages in 6s】则代表博客文件夹建立/初始化成功！</font></p><h3 id="启动服务预览-预览你的博客"><a href="#启动服务预览-预览你的博客" class="headerlink" title="启动服务预览|预览你的博客"></a>启动服务预览|预览你的博客</h3><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs properties"><span class="hljs-attr">hexo</span> <span class="hljs-string">g</span><br><span class="hljs-attr">hexo</span> <span class="hljs-string">s</span><br></code></pre></td></tr></table></figure><p><font face="微软雅黑" color=dimgray>出现【INFO Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a> . Press Ctrl+C to stop.】并在浏览器中打开其中的链接<a href="http://localhost:4000，且此网站为Hexo博客的雏形即算预览成功！">http://localhost:4000，且此网站为Hexo博客的雏形即算预览成功！</a></font></p><h3 id="使用Github建立静态网页"><a href="#使用Github建立静态网页" class="headerlink" title="使用Github建立静态网页"></a>使用Github建立静态网页</h3>]]></content>
     
     
     <categories>
       
-      <category>Information Technology</category>
+      <category>Experience</category>
       
     </categories>
     
-    
-    <tags>
-      
-      <tag>Hexo</tag>
-      
-    </tags>
     
   </entry>
   
