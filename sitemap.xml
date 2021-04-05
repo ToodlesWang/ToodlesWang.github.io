@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>www.noshegood.com/2021/04/05/%E4%BD%A0%E6%9B%BE%E7%BB%8F%E9%97%AE%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A7%89%E5%BE%97%E6%AF%8F%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%8E%A5%E8%BF%91%E4%BD%A0%E9%83%BD%E6%98%AF%E6%80%80%E6%9C%89%E6%9F%90%E7%A7%8D%E7%9B%AE%E7%9A%84%E7%9A%84/</loc>
+    
+    <lastmod>2021-04-05</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>www.noshegood.com/2021/04/04/%E5%8E%BB%E9%80%9B%E6%BC%AB%E5%B1%95%E5%95%A6/</loc>
     
     <lastmod>2021-04-04</lastmod>
@@ -74,7 +81,7 @@
 
   <url>
     <loc>www.noshegood.com</loc>
-    <lastmod>2021-04-04</lastmod>
+    <lastmod>2021-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -82,14 +89,14 @@
   
   <url>
     <loc>www.noshegood.com/tags/Book-Report/</loc>
-    <lastmod>2021-04-04</lastmod>
+    <lastmod>2021-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>www.noshegood.com/tags/%E6%B5%B4%E4%B8%AD%E5%A5%87%E6%80%9D/</loc>
-    <lastmod>2021-04-04</lastmod>
+    <lastmod>2021-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -98,21 +105,21 @@
   
   <url>
     <loc>www.noshegood.com/categories/Book-Report/</loc>
-    <lastmod>2021-04-04</lastmod>
+    <lastmod>2021-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>www.noshegood.com/categories/Experience/</loc>
-    <lastmod>2021-04-04</lastmod>
+    <lastmod>2021-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>www.noshegood.com/categories/Reminiscence/</loc>
-    <lastmod>2021-04-04</lastmod>
+    <lastmod>2021-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
